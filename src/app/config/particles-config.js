@@ -108,7 +108,7 @@
             distance: 200
           },
           bubble: {
-            distance: 200,
+            distance: 100,
             duration: 0.4,
             mix: false,
             divs: {

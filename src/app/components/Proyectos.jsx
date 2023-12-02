@@ -1,7 +1,10 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 import calculadora from "../../../public/giphy calculator.gif";
 import CRUD from "../../../public/Proyectos/CRUD.png";
@@ -23,18 +26,23 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiPrisma } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
 
-// hacer un recorrido de objetos con sus respectivos atributos
 
 const Proyectos = () => {
+
+  useEffect(() => {
+    Aos.init()
+  } ,[])
+
   return (
     <section
       id="Proyectos"
       style={{ scrollBehavior: "smooth"}}
-    className="lg:h-[60vh] xl:h-screen xl:w-full mb-20 sm:mx-10">
-      <section className="flex flex-col justify-cente max-w-screen-lg mx-auto px-10 md:px-0">
-      <h2 className="text-white text-4xl font-bold mb-10">Proyectos</h2>
+    className="lg:h-[60vh] xl:h-screen xl:w-full mb-20 mx-10 md:mx-0 pt-[50rem] md:pt-0 "> 
+      <section className="flex flex-col justify-center max-w-screen-lg mx-auto  px-10 md:px-0 " >
+      <h2 className="text-white text-4xl font-bold mb-10" >Proyectos</h2>
+
         <article className="grid place-content-center justify-between gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="grid place-content-center justify-between rounded-lg">
+          <div className="grid place-content-center justify-between rounded-lg" data-aos = 'fade-right'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -84,8 +92,8 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg">
-            <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
+          <div className="grid place-content-center justify-between rounded-lg"  data-aos = 'fade-right'>
+            <div className="relative flex max-w-lg p-2 bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
                   width={7000}
@@ -134,7 +142,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg">
+          <div className="grid place-content-center justify-between   rounded-lg"  data-aos = 'fade-right'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -184,7 +192,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg">
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'fade-left'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -237,7 +245,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg">
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'fade-left'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -287,7 +295,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg">
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'fade-left'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image

@@ -10,7 +10,14 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      screens: {
+        'tlc': '375px',
+        // => @media (min-width: 375px) { ... }
+  
+        'tlg': '380px',
+        // => @media (min-width: 428px) { ... }
       },
     },
   },

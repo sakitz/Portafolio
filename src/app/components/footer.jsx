@@ -1,10 +1,16 @@
 "use client"
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import emailjs from '@emailjs/browser'
 import Link from 'next/link'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Aos from 'aos';
 
 const Footer = () => {
+
+  
+  useEffect(() => {
+    Aos.init()
+  } ,[])
 
    const form = useRef()
 
@@ -23,10 +29,13 @@ const Footer = () => {
   return (
     <div 
       id='Contacto'
-    className='lg:h-[60vh] xl:h-screen xl:w-full sm:mx-10'>
-       <section class="text-gray-400 bg-[#17202a] body-font relative">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
+    className='lg:h-[60vh] xl:h-[70vh] xl:w-full pt-[10rem] md:pt-0 ' data-aos = 'fade-bottom'>
+       <section class="text-gray-400 body-font relative">
+  <div class="max-w-screen-lg
+                  mx-auto 
+                  h-screen 
+                   md:pt-20 xl:pt-0 px-10 md:px-0">
+    <div class="flex flex-col text-center w-full mb-8">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contactame</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Puedes contactarme mediante este formulario o mas abajo esta mi informacion</p>
     </div>

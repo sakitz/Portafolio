@@ -1,48 +1,41 @@
 "use client";
-import { React} from "react";
+import React, { useEffect }  from "react";
 import Image from "next/image";
+import Aos from "aos";
 
 const Aboutme = () => {
 
+  useEffect(() => {
+    Aos.init()
+  } ,[])
+
+
   return (
     <div
-    style={{ scrollBehavior: "smooth"}}
       id="Sobre mi"
-      className="xl:pt-20 mx-10"
+      className="h-screen w-full md:h-[50vh] xl:h-screen "
     
     >
       <section
-        className="max-w-screen-lg sm:mx-auto 
-                   grid grid-cols-1 md:grid-cols-2 gap-4
-                   place-content-center items-center px-4 justify-center"
+        className="max-w-screen-lg sm:mx-auto  grid grid-cols-1 md:grid-cols-2 gap-4 place-content-center items-center px-4 justify-center"
       >
-        <h1 className="font-bold text-white capitalize text-3xl md:text-5xl col-span-1 md:col-span-2 m-auto mb-4">
-          Sobre mi <span className="animate-pulse">👾👾👾</span>
+        <h1 className="font-bold text-white capitalize text-3xl md:text-5xl col-span-1 md:col-span-2 m-auto mb-4" data-aos = 'fade-top'>
+          Sobre mi <span className="animate-pulse">👾👾👾</span> 
         </h1>
-        <article>
-          <p className="text-white row-span-4">
-            <span className="font-semibold text-xl text-[#8e44ad] ">
-              Prem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
-            </span>
-            dolores ad ut recusandae omnis velit ipsa consectetur unde, officia,
-            asperiores suscipit perspiciatis distinctio quam quo facilis? Ad
-            dolor vero deserunt. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Pariatur dolores ad ut recusandae omnis velit ipsa
-            consectetur unde, officia, asperiores suscipit perspiciatis
-            distinctio quam quo facilis? Ad dolor vero deserunt. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Pariatur
-            <p className="mt-2 text-[#8e44ad] font-semibold">
-              Ahora que me conces tanto laboral como personalmente me puede
-              contactar por los siguentes medios
-            </p>
-          </p>
+        <article className="h-full" data-aos = 'fade-right'>
+          <p className="text-white text-xl">
+          Hola, me llamo <span className="text-violet-700">Benjamín</span> y tengo 17 años, naci el 08/03/2006 y soy un estudiante autodidacta, Tengo +2 años de experiencia en proyectos personales, soy una persona sociable y amable pero tambien soy una persona que se compromete y se apasiona con el trabajo y el seguir aprendiendo para ser el mejor posible en lo que hago. <br />
+          me gusta mucho el apartado del diseño de la web asique siempre soy un poco exigente con el estilo de la web tratando de que sea una web interactiva con animaciones que mejoren la experiencia del usuario
+          </p><br />
+          <br />
+          <p className="text-red-700 text-xl"> Si te a gustado mi perfil y te gustaria contactarme en la siguiente seccion podras contactarme.</p>
           <div className="flex pt-2 justify-center items-center flex-col gap-4">
           </div>
         </article>
-        <article>
+        <article data-aos = 'fade-left'>
           <Image
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="imagen"
             src="/logooo.png"
             className="grid-cols-2"
@@ -50,7 +43,7 @@ const Aboutme = () => {
         </article>
       </section>
     </div>
-  );
+);
 };
 
 export default Aboutme;

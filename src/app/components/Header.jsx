@@ -40,15 +40,13 @@ const Header = () => {
 
   return (
        <header
-       
-       
        id='home'
        style={{ scrollBehavior: "smooth"}}
-       className='bg-[#0f161f]  flex justify-between items-center 
-        w-full h-20 text-white
-        fixed px-4'
+       className='p-4 bg-[#0f161f]
+           text-white
+        fixed h-fit w-screen z-50'
        >
-
+        <div className=' text-white  flex justify-between items-center '>
         <Link
           href='#home'
           className='text-4xl hover:text-[2.75rem] font-bold transition-all'
@@ -78,8 +76,8 @@ const Header = () => {
                 <motion.li
                   key={link.id}    
                   className='text-white px-4 cursor-pointer capitalize 
-                  font-medium hover:scale-105
-                  after:h-[2px] after:w-0 after:bg-[#0c2eeb] after:block after:transition-all duration-[500ms] hover:after:w-[100%] hover:text-xl border-white ease-in'
+                  font-medium
+                  after:h-[2px] after:w-0 after:bg-[#0c2eeb] after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-white ease-in'
                   initial={{ 
                     x: 485,
                     opacity: 0 
@@ -98,7 +96,7 @@ const Header = () => {
                 ))}
           </ul>
           <div
-            className='cursor-pointer pr-4 z-10 text-white md:hidden'
+            className='cursor-pointer z-10 text-white md:hidden'
             onClick={() => setNav(!nav)}
           >
                {nav ? <FaTimes size={30}/>  :  <FaBars size={30}/>}
@@ -134,6 +132,9 @@ const Header = () => {
               ))}
             </ul>
           )}
+        </div>
+
+       
        </header>
   )
 }

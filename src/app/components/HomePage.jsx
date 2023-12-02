@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-import Link from 'next/link'
 import Image from 'next/image'
-import { FaArrowDown } from "react-icons/fa6";
 import { motion } from 'framer-motion'
+import ParticlesBackgraund from './ParticlesBackgraund'
 
 const HomePage = () => {
 
@@ -32,10 +31,10 @@ const HomePage = () => {
   ]
   return (
     <main
-      style={{ scrollBehavior: "smooth" }}
       id='Perfil' 
-      className='w-full h-screen sm:w-full sm:h-[70vh] lg:h-[60vh] xl:h-screen xl:w-full sm:mx-2'
+      className='h-screen w-full md:h-[90vh] lg:h-[70vh] xl:h-screen'
     >
+     <ParticlesBackgraund />
       
       <section className='max-w-screen-lg
                   mx-auto flex flex-col items-center 
@@ -55,8 +54,8 @@ const HomePage = () => {
             ease: "easeIn",
           }}
 
-          className='text-5xl text-white mb-4 font-semibold'>
-          Hola!, 😁 soy  <span className='text-green-700'>benjamin </span>
+          className='text-3xl md:text-5xl text-white mb-4 font-semibold'>
+          Hola!, 😁 soy  <span className='text-red-700'>benjamin </span>
             <TypeAnimation
              sequence={[
               'Desarrollador Web',
@@ -73,8 +72,10 @@ const HomePage = () => {
               700,
               'Desarrollador Web',
               700,
-              'FronEnd',
+              'FrontEnd',
               2000,
+              'Desarrollador Web',
+              700,
             ]}
             speed={300}  
             >
@@ -94,8 +95,10 @@ const HomePage = () => {
               ease: "easeIn",
             }}
           
-          className='text-white'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestias earum aut fugit recusandae dignissimos quis, ipsa, ipsum in consequuntur atque porro assumenda repellendus veniam saepe. Pariatur eius culpa explicabo.
+          className='text-sm text-white'>
+            y estoy comprometido a crear webs con un codigo legible, escalable y con el mejor performance posible. <br />
+            
+            <p className='mt-2'>dispuesto a aprender progresivamente y estudiar nuevas tecnologías, Si el trabajo lo requiere.</p>
           </motion.p>
             <article className='flex mt-6 mb-4'>
               {cvs.map(({id, child, href, download})  => (
@@ -143,10 +146,13 @@ const HomePage = () => {
               width={500}
               height={500}
               alt='imagen'
-              className='rounded-2xl sm:max-w-md 
+              className='rounded-2xl 
+
+              sm:max-w-md 
               sm:mt-8
-              sm:w-[300px] md:w-[30rem]
-              sm:h-[200px] md:h-[20rem]
+              overflow-hidden
+              md:w-[300px] lg:w-[30rem]
+              md:h-[200px] lg:h-[20rem]
               md:max-w-lg'
             />
           </motion.article>

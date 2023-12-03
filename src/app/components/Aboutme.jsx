@@ -37,8 +37,8 @@ const Aboutme = () => {
             width={400}
             height={400}
             alt="imagen"
-            src="/logooo.png"
-            className="grid-cols-2"
+            src="/heroo.jpg"
+            className="grid-cols-2 w-[380px] h-[450px] rounded-md border border-black"
           />
         </article>
       </section>

@@ -11,21 +11,21 @@ const HomePage = () => {
     {
       id:4,
       child: (
-          <button className='px-4 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-[#e67e22] transition-all hover:text-white'>
+          <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
            CV - ES
           </button> 
       ),
-      href: '../../../CV/CV Ludmila Iñigo.pdf',
+      href: '../../../CV/Benjamin.L-es.pdf',
       download: true,
   },
   {
     id:4,
     child: (
-        <button className='px-4 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-[#e67e22] transition-all hover:text-white'>
+        <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
           CV - EN
        </button> 
     ),
-    href: '../../../CV/benjamin.pdf',
+    href: '../../../CV/Benjamin.L-en.pdf',
     download: true,
 },
   ]

@@ -81,7 +81,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://calculadora-nine-hazel.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -131,7 +131,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://e-commerce-js-opal.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -181,7 +181,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://tic-tac-toe-wheat-nine.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -234,7 +234,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://react-expense-tau.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -284,7 +284,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://nextjs-api-users.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -337,7 +337,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://nextjs-prisma-crud-six-gules.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"

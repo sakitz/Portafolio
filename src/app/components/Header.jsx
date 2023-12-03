@@ -41,7 +41,6 @@ const Header = () => {
   return (
        <header
        id='home'
-       style={{ scrollBehavior: "smooth"}}
        className='p-4 bg-[#0f161f]
            text-white
         fixed h-fit w-screen z-50'
@@ -74,7 +73,7 @@ const Header = () => {
           <ul className='hidden md:flex'>
               {Links.map(({link, name}) => (
                 <motion.li
-                  key={link.id}    
+                  key={link.id}
                   className='text-white px-4 cursor-pointer capitalize 
                   font-medium
                   after:h-[2px] after:w-0 after:bg-[#0c2eeb] after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-white ease-in'

@@ -8,8 +8,9 @@ import ParticlesBackgraund from './ParticlesBackgraund'
 const HomePage = () => {
 
   const cvs = [
+  
     {
-      id:4,
+      id:1,
       child: (
           <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
            CV - ES
@@ -17,9 +18,9 @@ const HomePage = () => {
       ),
       href: '../../../CV/Benjamin.L-es.pdf',
       download: true,
-  },
+    },
   {
-    id:4,
+    id:2,
     child: (
         <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
           CV - EN

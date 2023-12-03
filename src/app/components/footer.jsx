@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <div 
       id='Contacto'
-    className='lg:h-[60vh] xl:h-[70vh] xl:w-full pt-[10rem] md:pt-0 ' data-aos = 'fade-bottom'>
+    className='h-screen w-full pt-[30rem] lg:h-[60vh] xl:h-[70vh] xl:w-full  md:pt-0 ' data-aos = 'fade-bottom'>
        <section class="text-gray-400 body-font relative">
   <div class="max-w-screen-lg
                   mx-auto 
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
         <div class="p-2 w-full">
-          <button type='submit' value="Enviar" class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+          <button type='submit' value="Enviar" class="flex mx-auto text-white bg-red-500 transition-all border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Enviar</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
           <a class="text-red-400">benjaminlopezmia@gmail.com</a>

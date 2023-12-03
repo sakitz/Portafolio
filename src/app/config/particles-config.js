@@ -333,7 +333,7 @@
             width: 1920,
             height: 1080
           },
-          limit: 0,
+          limit: 100,
           value: 100
         },
         opacity: {

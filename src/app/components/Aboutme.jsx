@@ -28,7 +28,7 @@ const Aboutme = () => {
           me gusta mucho el apartado del diseño de la web asique siempre soy un poco exigente con el estilo de la web tratando de que sea una web interactiva con animaciones que mejoren la experiencia del usuario
           </p><br />
           <br />
-          <p className="text-red-700 text-xl"> Si te a gustado mi perfil y te gustaria contactarme en la siguiente seccion podras contactarme.</p>
+          <p className="text-red-700 text-xl"> Si te a gustado mi perfil, podrias contactame en la siguiente seccion.</p>
           <div className="flex pt-2 justify-center items-center flex-col gap-4">
           </div>
         </article>

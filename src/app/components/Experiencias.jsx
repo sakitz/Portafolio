@@ -32,7 +32,7 @@ const Experiencias = () => {
     },
     {
       id: 4,
-      src: "/experiencias/framer-motion.svg",
+      src: "/experiencias/Framer-Motion.jpeg",
       title: "Framer-Motion",
       style: "bg-white hover:w-[100px] hover:h-[100px] transition-all"
     },

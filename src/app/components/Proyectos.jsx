@@ -37,8 +37,8 @@ const Proyectos = () => {
     <section
       id="Proyectos"
       style={{ scrollBehavior: "smooth"}}
-    className="lg:h-[60vh] xl:h-screen xl:w-full mb-20 mx-10 md:mx-0 pt-[50rem] md:pt-0 "> 
-      <section className="flex flex-col justify-center max-w-screen-lg mx-auto  px-10 md:px-0 " >
+    className="lg:h-[60vh] xl:h-screen xl:w-full mb-20 mx-10 md:mx-0 pt-[53rem] md:pt-0 "> 
+      <section className="flex flex-col justify-center max-w-screen-lg mx-auto " >
       <h2 className="text-white text-4xl font-bold mb-10" >Proyectos</h2>
 
         <article className="grid place-content-center justify-between gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">

@@ -105,11 +105,11 @@ const Experiencias = () => {
   ];
 
   return (
-    <section
-    style={{ scrollBehavior: "smooth"}}
-    className="h-screen w-full md:h-[100vh] xl:h-screen">
-      <h1 id="Tecnologias" className="text-5xl font-bold text-white text-center mb-10 flex justify-center">Tecnologias</h1>
-      <article className="mb-6 flex flex-col justify-center max-w-screen-lg mx-auto px-10" data-aos = 'fade-right'>
+    <section className="w-full h-screen pt-10" id="Tecnologias" >
+    <article  className="mb-6 flex flex-col justify-center max-w-screen-lg mx-auto px-10">
+    <h1 className="text-6xl text-transparent text-center flex justify-center">Proyectos</h1>
+      <article data-aos = 'fade-right'>
+        <h1 className="text-white text-5xl mb-2 text-center font-bold ">Tecnologias</h1>
         <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6 transition-all flex ">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
         <article
         className="flex flex-wrap justify-between">
@@ -130,7 +130,7 @@ const Experiencias = () => {
         <hr />
       </article>
  
-      <article className="mt-6 max-w-screen-lg mx-auto px-10" data-aos = 'fade-left'>
+      <article data-aos = 'fade-left'>
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-green-700 mb-6  transition-all flex ">D<p className="text-white">ata</p>B<p className="text-white">ase</p> <FaDatabase className="ml-4 hover:animate-bounce mt-2" /></h1>
         <article className="flex flex-wrap text-center gap-12">
           {backend.map(({ id, src, title, style }) => (
@@ -149,7 +149,7 @@ const Experiencias = () => {
         <hr className="" />
       </article>
 
-      <article className="mt-6 max-w-screen-lg mx-auto px-10" data-aos = 'fade-right'>
+      <article data-aos = 'fade-right'>
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">T<p className="text-white">ools</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
         <article className="flex flex-wrap text-center gap-16">
           {Tools.map(({ id, src, title, style }) => (
@@ -167,7 +167,10 @@ const Experiencias = () => {
         </article>
         <hr />
       </article>
-    </section>
+    </article>
+</section>
+     
+   
   );
 };
 

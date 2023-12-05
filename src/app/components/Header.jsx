@@ -41,11 +41,9 @@ const Header = () => {
   return (
        <header
        id='home'
-       className='p-4 bg-[#0f161f]
-           text-white
-        fixed h-fit w-screen z-50'
+       className='w-full h-24 bg-black fixed z-50'
        >
-        <div className=' text-white  flex justify-between items-center '>
+        <div className=' text-white flex justify-between items-center p-8'>
         <Link
           href='#home'
           className='text-4xl hover:text-[2.75rem] font-bold transition-all'
@@ -76,7 +74,7 @@ const Header = () => {
                   key={link.id}
                   className='text-white px-4 cursor-pointer capitalize 
                   font-medium
-                  after:h-[2px] after:w-0 after:bg-[#0c2eeb] after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-white ease-in'
+                  after:h-[2px] after:w-0 after:bg-green-600 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'
                   initial={{ 
                     x: 485,
                     opacity: 0 
@@ -105,7 +103,7 @@ const Header = () => {
             <ul
             className='flex flex-col absolute justify-center 
             items-center top-0 left-0 w-full h-screen bg-gradient-to-b 
-          from-blue-950 to-black text-white'>
+          from-red-800 via-red-950 to-black text-white'>
               {Links.map(({link, name})  => (
                 <motion.li
                 initial={{ 
@@ -125,7 +123,7 @@ const Header = () => {
                 >
                   <Link onClick={() => setNav(!nav)} href={link} duration={500}>
                             <p className='hover:scale-105
-                            after:h-[2px] after:w-0 after:bg-[#fff] after:block after:transition-all duration-[500ms] hover:after:w-[100%] text-white captalize text-4xl'>{name}</p>
+                            after:h-[2px] after:w-0 after:bg-white after:block after:transition-all duration-[500ms] hover:after:w-[100%] text-white captalize text-4xl'>{name}</p>
                   </Link>      
                 </motion.li>
               ))}

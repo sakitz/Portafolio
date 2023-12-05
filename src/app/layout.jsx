@@ -1,6 +1,11 @@
 import { Nunito } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header';
+import HomePage from './components/HomePage';
+import Experiencias from './components/Experiencias';
+import Proyectos from './components/Proyectos';
+import Aboutme from './components/Aboutme';
+import Footer from './components/Contacto';
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -13,9 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className='!scroll-smooth' >
       <body className={nunito.className}>
-        <div>
-        <Header/>     
-        </div>
+        <Header/>
+        <HomePage />
+        <Experiencias/>
+        <Proyectos />
+        <Aboutme />
+        <Footer />    
+
         {children}
       </body>
     </html>

@@ -13,7 +13,7 @@ const HomePage = () => {
       id:1,
       child: (
           <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
-           CV - ES
+           Descargar CV - ES
           </button> 
       ),
       href: '../../../CV/Benjamin.L-es.pdf',
@@ -23,24 +23,28 @@ const HomePage = () => {
     id:2,
     child: (
         <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
-          CV - EN
+           Download CV - EN
        </button> 
     ),
     href: '../../../CV/Benjamin.L-en.pdf',
     download: true,
 },
+
+//flex flex-col justify-center mr-6
   ]
   return (
+
     <main
       id='Perfil' 
-      className='h-screen w-full md:h-[90vh] lg:h-[70vh] xl:h-screen'
+      className='w-full h-screen'
     >
-     <ParticlesBackgraund />
+             <ParticlesBackgraund />
+      <section className=' max-w-screen-lg mx-auto
+                           flex flex-col items-center h-full md:px-4 px-10 justify-center
+                           md:flex-row md:justify-center md:ite'>
+
       
-      <section className='max-w-screen-lg
-                  mx-auto flex flex-col items-center 
-                  justify-center h-full md:px-4 md:flex-row px-10'>
-        <article className='flex flex-col justify-center mr-6'>
+        <article className='flex flex-col justify-center mr-6'> 
           <motion.h1 
            initial={{ 
             y: -485,
@@ -56,7 +60,7 @@ const HomePage = () => {
           }}
 
           className='text-3xl md:text-5xl text-white mb-4 font-semibold'>
-          Hola!, 😁 soy  <span className='text-red-700'>benjamin </span>
+          Hola!, 😁 soy  <span className='text-red-700'>Benjamin </span>
             <TypeAnimation
              sequence={[
               'Desarrollador Web',

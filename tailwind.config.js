@@ -16,9 +16,14 @@ module.exports = {
         'tlc': '375px',
         // => @media (min-width: 375px) { ... }
   
-        'tlg': '380px',
+        'tlg': '464px',
+        // => @media (min-width: 428px) { ... }
+        'tlgx': '494px',
         // => @media (min-width: 428px) { ... }
       },
+      height: {
+        'vsm': '150vh',
+      }
     },
   },
   plugins: [],

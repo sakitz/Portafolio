@@ -34,19 +34,16 @@ const Proyectos = () => {
   } ,[])
 
   return (
-    <section
-      id="Proyectos"
-      style={{ scrollBehavior: "smooth"}}
-    className="lg:h-[60vh] xl:h-screen xl:w-full mb-20 mx-10 md:mx-0 pt-[53rem] md:pt-0 "> 
-      <section className="flex flex-col justify-center max-w-screen-lg mx-auto " >
-      <h2 className="text-white text-4xl font-bold mb-10" >Proyectos</h2>
-
-        <article className="grid place-content-center justify-between gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="w-full screen tlc:mt-[30rem] tlg:mt-[18rem] tlgx:mt-0"> 
+               <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>
+      <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
+      <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>
+        <article className="grid place-content-center gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           <div className="grid place-content-center justify-between rounded-lg" data-aos = 'fade-right'>
-            <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
+            <div className="relative flex max-w-lg p-2  bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={7000}
+                  width={1000}
                   height={1000}
                   src={calculadora}
                   alt="imagen"
@@ -350,7 +347,7 @@ const Proyectos = () => {
         </article>
       </section>
     </section>
+    
   );
 };
-
 export default Proyectos;

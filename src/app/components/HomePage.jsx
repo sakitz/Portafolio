@@ -151,7 +151,8 @@ const HomePage = () => {
               height={500}
               alt='imagen'
               className='rounded-2xl 
-
+               tlmc:hidden
+               md:block
               sm:max-w-md 
               sm:mt-8
               overflow-hidden

@@ -13,13 +13,17 @@ module.exports = {
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       screens: {
+        'tlmc': '300px',
+        // => @media (min-width: 300px) { ... }
+
         'tlc': '375px',
         // => @media (min-width: 375px) { ... }
   
         'tlg': '464px',
-        // => @media (min-width: 428px) { ... }
+        // => @media (min-width: 464px) { ... }
+        
         'tlgx': '494px',
-        // => @media (min-width: 428px) { ... }
+        // => @media (min-width: 494px) { ... }
       },
       height: {
         'vsm': '150vh',

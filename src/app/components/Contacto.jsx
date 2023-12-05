@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <div
       id="Contacto"
-      className="w-full h-screen tlc:mt-[10rem] md:mt-[10rem] xl:mt-0 "
+      className="w-full h-screen tlc:mt-[30rem] md:mt-[10rem] xl:mt-0 "
       data-aos="fade-bottom"
     >
       <h2

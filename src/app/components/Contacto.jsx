@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Aos from "aos";
+import Swal from "sweetalert2";
 
 const Footer = () => {
   useEffect(() => {
@@ -31,6 +32,16 @@ const Footer = () => {
         }
       );
   };
+
+  const handleClick = () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Tu Correo fue enviado.",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  } 
 
   return (
     <div
@@ -73,6 +84,7 @@ const Footer = () => {
                     type="text"
                     id="name"
                     name="user_name"
+                    required
                     class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
@@ -86,6 +98,7 @@ const Footer = () => {
                     type="email"
                     id="email"
                     name="user_email"
+                    required
                     class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
@@ -98,12 +111,14 @@ const Footer = () => {
                   <textarea
                     id="message"
                     name="message"
+                    required
                     class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
               <div class="p-2 w-full">
                 <button
+                  onClick={handleClick}
                   type="submit"
                   value="Enviar"
                   class="flex mx-auto text-white bg-red-500 transition-all border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg"
@@ -129,6 +144,7 @@ const Footer = () => {
                   <Link
                     href="https://www.linkedin.com/in/m%C3%A1ximo-benjamin-lopez-2476152a2/"
                     className="hover:scale-125 hover:text-white transition-all "
+                    target="_blank"
                   >
                     <p className="text-center text-white mb-2">LinkedIn</p>
                     <FaLinkedin size={50} className="text-white " />

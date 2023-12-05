@@ -34,10 +34,10 @@ const Aboutme = () => {
         </article>
         <article data-aos = 'fade-left'>
           <Image
-            width={400}
-            height={400}
+            width={1000000}
+            height={1000000}
             alt="imagen"
-            src="/heroo.jpg"
+            src="/hero.jpg"
             className="grid-cols-2 place-content-center w-[400px] h-[500px] rounded-md border border-black"
           />
         </article>

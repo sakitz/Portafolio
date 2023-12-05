@@ -34,7 +34,7 @@ const Proyectos = () => {
   } ,[])
 
   return (
-      <section className="w-full screen tlc:mt-[30rem] tlmc:pt-[25rem] tlg:mt-[18rem] tlgx:mt-0"> 
+      <section className="w-full screen  tlmc:pt-[25rem] tlc:mt-[30rem] tlg:mt-[18rem] sm:pt-0 md:mt-0 "> 
                <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>
       <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
       <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>

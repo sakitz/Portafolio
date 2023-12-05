@@ -43,7 +43,7 @@ const Header = () => {
        id='home'
        className='w-full h-24 bg-black fixed z-50'
        >
-        <div className=' text-white flex justify-between items-center p-8'>
+        <section className=' text-white flex justify-between items-center p-8'>
         <Link
           href='#home'
           className='text-4xl hover:text-[2.75rem] font-bold transition-all'
@@ -92,12 +92,12 @@ const Header = () => {
                 </motion.li>
                 ))}
           </ul>
-          <div
+          <article
             className='cursor-pointer z-10 text-white md:hidden'
             onClick={() => setNav(!nav)}
           >
                {nav ? <FaTimes size={30}/>  :  <FaBars size={30}/>}
-          </div>
+          </article>
 
           {nav && (
             <ul
@@ -129,7 +129,7 @@ const Header = () => {
               ))}
             </ul>
           )}
-        </div>
+        </section>
 
        
        </header>

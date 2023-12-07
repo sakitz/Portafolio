@@ -25,7 +25,7 @@ const Aboutme = () => {
         </h1>
         <article className="h-full" data-aos = 'fade-right'>
           <p className="text-white text-xl">
-          Hola me llamo <span className="text-red-500">Benjamin</span> tengo 17 años, Naci el 08/03/2023, Me dedico al apartado Frontend aplicando React y Next.js para un mejor rendimiento tengo +1 año de experiencia en proyectos personales como operaciones CRUD, E-commerce, Conección de una API para recopilar usuarios. Actualmente estoy estudiando Python para backend con FastAPI para un futuro ser un FullStack Developer.
+          Hola me llamo <span className="text-red-500">Benjamin</span> tengo 17 años, Naci el 08/03/2006, Me dedico al apartado Frontend aplicando React y Next.js para un mejor rendimiento tengo +1 año de experiencia en proyectos personales como operaciones CRUD, E-commerce, Conección de una API para recopilar usuarios. Actualmente estoy estudiando Python para backend con FastAPI para un futuro ser un FullStack Developer.
           </p><br />
           <br />
           <p className="text-red-500 text-xl"> Si te a gustado mi perfil, podrias contactame en la siguiente seccion.</p>

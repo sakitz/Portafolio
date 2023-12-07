@@ -146,7 +146,7 @@ const HomePage = () => {
         
           >
             <Image 
-              src='/giphy.gif'
+              src='/giphy2.gif'
               width={500}
               height={500}
               alt='imagen'

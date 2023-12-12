@@ -5,6 +5,18 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import ParticlesBackgraund from './ParticlesBackgraund'
 
+
+/* {
+      id:2,
+      child: (
+          <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
+             Download CV - EN
+         </button> 
+      ),
+      href: '../../../CV/Benjamin.L-en.pdf',
+      download: true, 
+    },*/ 
+
 const HomePage = () => {
 
   const cvs = [
@@ -12,22 +24,13 @@ const HomePage = () => {
       id:1,
       child: (
           <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
-           Descargar CV - ES
+           Descargar CV 
           </button> 
       ),
-      href: '../../../CV/Benjamin.L-es.pdf',
+      href: '../../../CV/benjamin-L.pdf',
       download: true,
-    },
-  {
-    id:2,
-    child: (
-        <button className='px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
-           Download CV - EN
-       </button> 
-    ),
-    href: '../../../CV/Benjamin.L-en.pdf',
-    download: true,
-},
+    }
+   
 
 //flex flex-col justify-center mr-6
   ]
@@ -46,7 +49,7 @@ const HomePage = () => {
         <article className='flex flex-col justify-center mr-6'> 
           <motion.h1 
            initial={{ 
-            y: -485,
+            y: -500,
             opacity: 0 
           }}
           animate={{
@@ -54,7 +57,7 @@ const HomePage = () => {
             opacity:1
           }}
           transition={{
-            duration: 0.5,
+            duration: 1,
             ease: "easeIn",
           }}
 
@@ -87,7 +90,7 @@ const HomePage = () => {
           </motion.h1>
           <motion.p 
              initial={{ 
-              x: -485,
+              x: -500,
               opacity: 0 
             }}
             animate={{
@@ -95,14 +98,14 @@ const HomePage = () => {
               opacity:1
             }}
             transition={{
-              duration: 0.5,
+              duration: 1,
               ease: "easeIn",
             }}
           
           className='text-sm text-white'>
-            y estoy comprometido a crear webs con un codigo legible, escalable y con el mejor performance posible. <br />
+            Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento posible. <br />
             
-            <p className='mt-2'>dispuesto a aprender progresivamente y estudiar nuevas tecnologías, Si el trabajo lo requiere.</p>
+            <p className='mt-2'>Dispuesto a aprender progresivamente y estudiar nuevas tecnologías, si el trabajo lo requiere.</p>
           </motion.p>
             <article className='flex mt-6 mb-4'>
               {cvs.map(({id, child, href, download})  => (

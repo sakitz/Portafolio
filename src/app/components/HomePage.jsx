@@ -23,7 +23,7 @@ const HomePage = () => {
     {
       id:1,
       child: (
-          <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-green-600 transition-all hover:text-white'>
+          <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-blue-800 transition-all hover:text-white'>
            Descargar CV 
           </button> 
       ),
@@ -43,7 +43,7 @@ const HomePage = () => {
              <ParticlesBackgraund />
       <section className=' max-w-screen-lg mx-auto
                            flex flex-col items-center h-full md:px-4 px-10 justify-center
-                           md:flex-row md:justify-center md:ite'>
+                           md:flex-row md:justify-center'>
 
       
         <article className='flex flex-col justify-center mr-6'> 
@@ -61,33 +61,27 @@ const HomePage = () => {
             ease: "easeIn",
           }}
 
-          className='text-3xl md:text-5xl text-white mb-4 font-semibold'>
-          Hola!, 😁 soy  <span className='text-red-700'>Benjamin </span>
-            <TypeAnimation
+          className='text-3xl md:text-3xl text-white mb-2 font-semibold'>
+          Hola!, soy  <span className='text-blue-700'>Benjamin </span>
+          </motion.h1>
+          <p className='text-4xl text-white font-bold'>
+              <TypeAnimation
              sequence={[
-              'Desarrollador Web',
-              700,
-              'FronEnd',
-              700,
-              'Desarrollador Web',
-              700,
-              'FronEnd',
-              700,
-              'Desarrollador Web',
-              700,
-              'FronEnd',
-              700,
-              'Desarrollador Web',
-              700,
-              'FrontEnd',
-              2000,
-              'Desarrollador Web',
-              700,
+              'Desarrollador Web', 900,
+              'FronEnd',900,
+              'Desarrollador Web',900,
+              'FronEnd',900,
+              'Desarrollador Web',900,
+              'FronEnd', 900,
+              'Desarrollador Web',900,
+              'FrontEnd',2000,
+              'Desarrollador Web',700,
             ]}
             speed={300}  
             >
             </TypeAnimation>
-          </motion.h1>
+              </p><br />
+
           <motion.p 
              initial={{ 
               x: -500,
@@ -99,10 +93,10 @@ const HomePage = () => {
             }}
             transition={{
               duration: 1,
-              ease: "easeIn",
+              ease: "easeIn"
             }}
           
-          className='text-sm text-white'>
+          className='text-[1rem] text-white pt-4'>
             Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento posible. <br />
             
             <p className='mt-2'>Dispuesto a aprender progresivamente y estudiar nuevas tecnologías, si el trabajo lo requiere.</p>

@@ -46,7 +46,7 @@ const Footer = () => {
   return (
     <div
       id="Contacto"
-      className="w-full h-screen tlc:mt-[30rem] md:mt-[10rem] xl:mt-0 "
+      className="w-full h-screen tlc:mt-[40rem] md:mt-[20rem] xl:mt-0 "
       data-aos="fade-bottom"
     >
       <h2
@@ -121,13 +121,13 @@ const Footer = () => {
                   onClick={handleClick}
                   type="submit"
                   value="Enviar"
-                  class="flex mx-auto text-white bg-red-500 transition-all border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg"
+                  class="flex mx-auto text-white bg-transparent border-2 border-white transition-all py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg"
                 >
                   Enviar
                 </button>
               </div>
               <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                <a class="text-red-400">benjaminlopezmia@gmail.com</a>
+                <a class="text-blue-500">benjaminlopezmia@gmail.com</a>
                 <p class="leading-normal my-5">
                   San miguel de Tucuman, Argentina
                 </p>

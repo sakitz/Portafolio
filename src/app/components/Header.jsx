@@ -74,7 +74,7 @@ const Header = () => {
                   key={link.id}
                   className='text-white px-4 cursor-pointer capitalize 
                   font-medium
-                  after:h-[2px] after:w-0 after:bg-green-600 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'
+                  after:h-[2px] after:w-0 after:bg-blue-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'
                   initial={{ 
                     x: 485,
                     opacity: 0 
@@ -103,7 +103,7 @@ const Header = () => {
             <ul
             className='flex flex-col absolute justify-center 
             items-center top-0 left-0 w-full h-screen bg-gradient-to-b 
-          from-red-800 via-red-950 to-black text-white'>
+          from-blue-800 via-blue-950 to-black text-white'>
               {Links.map(({link, name})  => (
                 <motion.li
                 initial={{ 

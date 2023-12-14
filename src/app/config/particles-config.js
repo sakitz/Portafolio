@@ -176,7 +176,7 @@
             },
             shadow: {
               color: {
-                value: "#000000"
+                value: "#0B2545"
               },
               length: 2000
             }
@@ -230,7 +230,7 @@
           }
         },
         color: {
-          value: "#ff0000",
+          value: "#0000ff",
           animation: {
             h: {
               count: 0,

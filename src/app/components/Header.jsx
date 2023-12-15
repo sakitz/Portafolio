@@ -41,7 +41,7 @@ const Header = () => {
   return (
        <header
        id='home'
-       className='w-full h-24 bg-black fixed z-50'
+       className='w-full h-24 bg-[#0b0b0b] fixed z-50'
        >
         <section className=' text-white flex justify-between items-center p-8'>
         <Link
@@ -62,6 +62,7 @@ const Header = () => {
               ease: "easeIn",
              
             }}
+            className=' font-Logo'
           >
             Benjamin L.
           </motion.h1>

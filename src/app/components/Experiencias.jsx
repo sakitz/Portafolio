@@ -16,49 +16,49 @@ const Experiencias = () => {
       id: 1,
       src: "/experiencias/html-5.png",
       title: "HTML",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 2,
       src: "/experiencias/css.png",
       title: "CSS",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 3,
       src: "/experiencias/tailwind.jpeg",
       title: "TailwindCss",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 4,
       src: "/experiencias/Framer-Motion.jpeg",
       title: "Framer-Motion",
-      style: "bg-white hover:w-[100px] hover:h-[100px] transition-all"
+      style: "bg-white hover:scale-125 transition-all"
     },
     {
       id: 5,
       src: "/experiencias/js.png",
       title: "JavaScript",
-      style: "hover:hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 6,
       src: "/experiencias/typescript.png",
       title: "TypeScript",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 7,
       src: "/experiencias/react.png",
       title: "React",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 8,
       src: "/experiencias/Next..js.png",
       title: "Next.Js",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
   ];
 
@@ -67,19 +67,19 @@ const Experiencias = () => {
       id: 1,
       src: "/experiencias/Prismaorm.png",
       title: "Prisma ORM",
-      style: "bg-white p-2 hover:w-[100px] hover:h-[100px] transition-all "
+      style: "hover:scale-125 transition-all bg-white"
     },
     {
       id: 2,
       src: "/experiencias/sqlite_logo_icon_169724.png",
       title: "SQLite",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 3,
       src: "/experiencias/st,small,507x507-pad,600x600,f8f8f8.jpg",
       title: "PostgreSQL",
-      style: " hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
   ];
 
@@ -88,19 +88,25 @@ const Experiencias = () => {
       id: 1,
       src: "/experiencias/git.png",
       title: "Git",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 2,
       src: "/experiencias/vite.png",
       title: "Vite",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
     },
     {
       id: 3,
       src: "/experiencias/visual-studio-code7642.jpg",
       title: "VS Code",
-      style: "hover:w-[100px] hover:h-[100px] transition-all"
+      style: "hover:scale-125 transition-all"
+    },
+    {
+      id: 4,
+      src: "/experiencias/postman.png",
+      title: "Postman",
+      style: "hover:scale-125 transition-all"
     },
   ];
 
@@ -110,7 +116,7 @@ const Experiencias = () => {
     <h1 className="text-6xl text-transparent text-center flex justify-center">Proyectos</h1>
       <article data-aos = 'fade-right'>
         <h1 className="text-white text-5xl mb-2 text-center font-bold ">Tecnologias</h1>
-        <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6 transition-all flex ">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
+        <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6  transition-all flex ">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
         <article
         className="flex flex-wrap justify-between">
           {fronted.map(({ id, src, title, style }) => (
@@ -123,7 +129,7 @@ const Experiencias = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-center">{title}</p>
+              <p className="text-center pt-2">{title}</p>
             </div>
           ))}
         </article>
@@ -142,7 +148,7 @@ const Experiencias = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-cente">{title}</p>
+              <p className="text-center pt-2">{title}</p>
             </div>
           ))}
         </article>
@@ -161,7 +167,7 @@ const Experiencias = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-center">{title}</p>
+              <p className="text-center pt-2">{title}</p>
             </div>
           ))}
         </article>

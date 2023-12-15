@@ -23,7 +23,7 @@ const HomePage = () => {
     {
       id:1,
       child: (
-          <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-full hover:bg-blue-800 transition-all hover:text-white'>
+          <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-md hover:bg-blue-800 transition-all hover:text-white'>
            Descargar CV 
           </button> 
       ),
@@ -61,21 +61,33 @@ const HomePage = () => {
             ease: "easeIn",
           }}
 
-          className='text-3xl md:text-3xl text-white mb-2 font-semibold'>
+          className='text-3xl md:text-[2.80rem] text-white mb-2 font-semibold'>
           Hola!, soy  <span className='text-blue-700'>Benjamin </span>
           </motion.h1>
-          <p className='text-4xl text-white font-bold'>
+          <p className='text-[3.50rem] text-white font-bold'>
               <TypeAnimation
              sequence={[
-              'Desarrollador Web', 900,
-              'FronEnd',900,
-              'Desarrollador Web',900,
-              'FronEnd',900,
-              'Desarrollador Web',900,
-              'FronEnd', 900,
-              'Desarrollador Web',900,
-              'FrontEnd',2000,
-              'Desarrollador Web',700,
+              'Desarrollador Web', 600,
+              'FronEnd',600,
+              'Desarrollador Web',600,
+              'FronEnd',600,
+              'Desarrollador Web',600,
+              'FronEnd', 600,
+              'Desarrollador Web',600,
+              'FrontEnd',600,
+              'Desarrollador Web',600,
+              'FronEnd',600,
+              'Desarrollador Web',600,
+              'FronEnd', 600,
+              'Desarrollador Web',600,
+              'FrontEnd',600,
+              'Desarrollador Web',600,
+              'FronEnd',600,
+              'Desarrollador Web',600,
+              'FronEnd', 600,
+              'Desarrollador Web',600,
+              'FrontEnd',600,
+              'Desarrollador Web FronEnt.',600,
             ]}
             speed={300}  
             >

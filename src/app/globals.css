@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('./fonts/Silkscreen-Bold.ttf');
+}
+
 

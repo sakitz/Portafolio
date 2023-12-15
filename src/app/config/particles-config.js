@@ -3,7 +3,7 @@
       autoPlay: true,
       background: {
         color: {
-          value: "#000"
+          value:"#0B0B0B"
         },
         image: "",
         position: "",

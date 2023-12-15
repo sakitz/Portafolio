@@ -27,6 +27,9 @@ module.exports = {
       },
       height: {
         'vsm': '150vh',
+      },
+      fontFamily:{
+        'Logo': ['Silkscreen', 'sans-serif' ]
       }
     },
   },

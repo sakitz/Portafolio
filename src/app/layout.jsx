@@ -19,6 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
+
       <body className={roboto_condensed.className}>
         <Header/>
         <HomePage />
@@ -26,7 +27,6 @@ export default function RootLayout({ children }) {
         <Proyectos />
         <Aboutme />
         <Footer />    
-
         {children}
       </body>
     </html>

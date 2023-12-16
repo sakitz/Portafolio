@@ -54,7 +54,7 @@ const Aboutme = () => {
           <section className="h-fit tlmc:h-fit md:w-full grid grid-cols-2 tlmc:grid-rows-1 md:grid-rows-2 gap-2">
             <Image src='/horario.gif' width={10000} height={1000} alt="imagen" className="hidden md:inline-block col-span-2 w-full h-36 rounded-md border-2 border-violet-700" />
             <Image src="/retro-unscreen.gif" width={1000} height={1000} alt="imagen" className="border border-violet-700 bg-blue-950 rounded-md w-full h-40 tlmc:hidden md:inline-block"/>
-            <p className="tlmc:col-span-2 md:col-span-1 text-white font-bold font-Logo text-3xl rounded-md bg-gradient-to-br from-violet-700 via-violet-800 to-violet-950 w-full h-40 grid place-content-center border-2 border-violet-700 ">{currentHour ? <p>{currentHour}<span className="animate-pulse">.</span></p> : <p>Loading...</p>}</p>
+            <p className="tlmc:col-span-2 md:col-span-1 text-white font-bold font-Logo text-3xl rounded-md bg-gradient-to-br from-violet-700 via-violet-800 to-violet-950 w-full h-40 grid place-content-center border-2 border-violet-700 ">{currentHour ? <p>{currentHour}<span className="animate-pulse">.</span></p> :  <p>{currentHour}<span className="animate-pulse">.</span></p>}</p>
             <p className="col-span-2 w-fit h-fit text-violet-600 text-xl place-content-center"> Si te a gustado mi perfil, podrias contactame en la siguiente seccion.</p>
           </section>
 

@@ -15,15 +15,14 @@ const Aboutme = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires');
         const data = await response.json();
         const { datetime } = data;
         const formattedHour = new Date(datetime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         setCurrentHour(formattedHour);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching data:', error);
-        setLoading(false);
+        console.error('Error fetching data:', error.message);
       }
     };
 

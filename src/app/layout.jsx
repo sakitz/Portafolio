@@ -21,12 +21,12 @@ export default function RootLayout({ children }) {
     <html lang="en" >
 
       <body className={roboto_condensed.className}>
-        <Header/>
+         <Header/>
         <HomePage />
         <Experiencias/>
         <Proyectos />
         <Aboutme />
-        <Footer />    
+        <Footer />     
         {children}
       </body>
     </html>

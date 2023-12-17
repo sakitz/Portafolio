@@ -27,7 +27,7 @@ const HomePage = () => {
            Descargar CV 
           </button> 
       ),
-      href: '../../../CV/benjamin-L.pdf',
+      href: '../../../CV/benjamin-Ll.pdf',
       download: true,
     }
    

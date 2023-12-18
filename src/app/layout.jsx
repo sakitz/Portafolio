@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <Experiencias/>
         <Proyectos />
         <Aboutme />
-        <Footer />     
+        <Footer />
         {children}
       </body>
     </html>

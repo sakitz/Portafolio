@@ -1,10 +1,9 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import ParticlesBackgraund from './ParticlesBackgraund'
-
+import { motion } from 'framer-motion'
 
 /* {
       id:2,
@@ -21,18 +20,15 @@ const HomePage = () => {
 
   const cvs = [
     {
-      id:1,
+      id:0,
       child: (
           <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-md hover:bg-blue-800 transition-all hover:text-white'>
-           Descargar CV 
+            Descargar CV 
           </button> 
       ),
       href: '../../../CV/benjamin-Ll.pdf',
       download: true,
     }
-   
-
-//flex flex-col justify-center mr-6
   ]
   return (
 
@@ -46,113 +42,58 @@ const HomePage = () => {
                            md:flex-row md:justify-center'>
 
       
-        <article className='flex flex-col justify-center mr-6'> 
-          <motion.h1 
-           initial={{ 
-            y: -500,
-            opacity: 0 
-          }}
-          animate={{
-            y: 0,
-            opacity:1
-          }}
-          transition={{
-            duration: 1,
-            ease: "easeIn",
-          }}
-
-          className='text-3xl md:text-[2.80rem] text-white mb-2 font-semibold'>
+        <motion.article 
+           initial={{ x: -1000 }}
+           animate={{ x: 0 }}
+           transition={{
+             duration: 1,
+             ease: 'easeInOut',
+             type: 'spring'
+           }}
+        className='flex flex-col justify-center mr-6'> 
+          <h1 className='text-3xl md:text-[2.80rem] text-white mb-2 font-semibold' >
           Hola!, soy  <span className='text-blue-700'>Benjamin </span>
-          </motion.h1>
+          </h1>
           <p className='text-[3.50rem] text-white font-bold'>
               <TypeAnimation
-             sequence={[
-              'Desarrollador Web', 600,
-              'FronEnd',600,
-              'Desarrollador Web',600,
-              'FronEnd',600,
-              'Desarrollador Web',600,
-              'FronEnd', 600,
-              'Desarrollador Web',600,
-              'FrontEnd',600,
-              'Desarrollador Web',600,
-              'FronEnd',600,
-              'Desarrollador Web',600,
-              'FronEnd', 600,
-              'Desarrollador Web',600,
-              'FrontEnd',600,
-              'Desarrollador Web',600,
-              'FronEnd',600,
-              'Desarrollador Web',600,
-              'FronEnd', 600,
-              'Desarrollador Web',600,
-              'FrontEnd',600,
-              'Desarrollador Web FronEnt.',600,
+             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'FronEnd', 600,'Desarrollador Web',600,'FrontEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'FronEnd', 600,'Desarrollador Web',600,'FrontEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'FronEnd', 600,'Desarrollador Web',600,'FrontEnd',600,'Desarrollador Web FronEnt.',600,
             ]}
             speed={300}  
             >
             </TypeAnimation>
               </p><br />
 
-          <motion.p 
-             initial={{ 
-              x: -500,
-              opacity: 0 
-            }}
-            animate={{
-              x: 0,
-              opacity:1
-            }}
-            transition={{
-              duration: 1,
-              ease: "easeIn"
-            }}
-          
-          className='text-[1rem] text-white pt-4'>
-            Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento posible. <br />
-            
-            <p className='mt-2'>Dispuesto a aprender progresivamente y estudiar nuevas tecnologías, si el trabajo lo requiere.</p>
-          </motion.p>
+          <p className='text-[1rem] text-white pt-4'>
+            Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento. <br />
+            <span>Dispuesto a aprender progresivamente y estudiar nuevas tecnologías, si el trabajo lo requiere.</span>
+          </p>
             <article className='flex mt-6 mb-4'>
               {cvs.map(({id, child, href, download})  => (
-                <motion.span 
-                initial={{ 
-                  y: 485,
-                  opacity: 0 
-                }}
-                animate={{
-                  y: 0,
-                  opacity:1
-                }}
-                transition={{
-                  duration: 1,
-                  ease: "easeIn",
-                }}
-              
+                <span 
                 key={id}>
                   <a href={href} download={download}>
                     {child}
                   </a>
-                </motion.span>
+                </span>
                 
               ))}
             </article>
-        </article>
+        </motion.article>
         
-          <motion.article 
-           initial={{ 
-            x: 700,
-            opacity: 0 
+          <motion.article
+          initial={{ 
+            y: -1000, 
+            opacity: 0
           }}
-          animate={{
-            x: 0,
-            opacity:1
+          animate={{ 
+            y: 0,
+            opacity: 1
           }}
           transition={{
-            duration: .7,
-            ease: "easeIn",
+            duration: 1,
+            ease: 'easeInOut',
+            type: 'spring'
           }}
-        
           >
             <Image 
               src='/giphy2.gif'

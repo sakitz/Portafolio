@@ -6,7 +6,7 @@ import Image from "next/image";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 
-import calculadora from "../../../public/giphy calculator.gif";
+import tetris from "../../../public/Proyectos/giphytetris.gif";
 import CRUD from "../../../public/Proyectos/CRUD.png";
 import ecomerce from "../../../public/Proyectos/ecomerce.PNG";
 import reactexpense from "../../../public/Proyectos/react-expense.PNG";
@@ -39,13 +39,13 @@ const Proyectos = () => {
       <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
       <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>
         <article className="grid place-content-center gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="grid place-content-center justify-between rounded-lg" data-aos = 'fade-right'>
+          <div className="grid place-content-center justify-between rounded-lg" data-aos = 'flip-down'>
             <div className="relative flex max-w-lg p-2  bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
                   width={1000}
                   height={1000}
-                  src={calculadora}
+                  src={tetris}
                   alt="imagen"
                   className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
                 />
@@ -53,7 +53,7 @@ const Proyectos = () => {
 
               <article className="flex flex-col gap-2 my-auto mx-auto pb-12 text-center">
                 <h1 className="text-xl font-bold lg:text-2xl text-white ">
-                  <span className="mx-auto p-2 text-center">Calculadora</span>
+                  <span className="mx-auto p-2 text-center">Tetris</span>
                 </h1>
 
                 <ul className="flex flex-wrap gap-2 rounded-md text-white">
@@ -70,7 +70,7 @@ const Proyectos = () => {
               </article>
               <article className="absolute right-4 bottom-4 flex flex-center text-white">
                 <Link
-                  href="https://github.com/sakitz/Calculadora"
+                  href="https://github.com/sakitz/Tetris"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -78,7 +78,7 @@ const Proyectos = () => {
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
-                  href="https://calculadora-nine-hazel.vercel.app/"
+                  href="https://tetris-one-peach.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
                   alt="COde"
@@ -89,7 +89,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between rounded-lg"  data-aos = 'fade-right'>
+          <div className="grid place-content-center justify-between rounded-lg"  data-aos = 'flip-down'>
             <div className="relative flex max-w-lg p-2 bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -139,7 +139,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg"  data-aos = 'fade-right'>
+          <div className="grid place-content-center justify-between   rounded-lg"  data-aos = 'flip-right'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -189,7 +189,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'fade-left'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'flip-left'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -242,7 +242,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'fade-left'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'flip-up'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -292,7 +292,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'fade-left'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'flip-down'>
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image

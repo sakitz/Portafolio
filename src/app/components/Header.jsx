@@ -33,7 +33,7 @@ const Header = () => {
       id:5,
       link: '#Contacto',
       name:'Contacto' 
-  },
+    },
 
 ]
 
@@ -70,9 +70,9 @@ const Header = () => {
         </Link>
           
           <ul className='hidden md:flex'>
-              {Links.map(({link, name}) => (
+              {Links.map(({link, name, id}) => (
                 <motion.li
-                  key={link.id}
+                  key={id}
                   className='text-white px-4 cursor-pointer capitalize 
                   font-medium
                   after:h-[2px] after:w-0 after:bg-blue-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'
@@ -105,7 +105,7 @@ const Header = () => {
             className='flex flex-col absolute justify-center 
             items-center top-0 left-0 w-full h-screen bg-gradient-to-b 
           from-blue-800 via-blue-950 to-black text-white'>
-              {Links.map(({link, name})  => (
+              {Links.map(({link, name, id})  => (
                 <motion.li
                 initial={{ 
                   x: 485,
@@ -119,7 +119,7 @@ const Header = () => {
                   duration: 0.5,
                   ease: "easeIn",
                 }}
-                key={link.id}
+                key={id}
                 className='px-4 cursor-pointer py-6 text-4xl'
                 >
                   <Link onClick={() => setNav(!nav)} href={link} duration={500}>

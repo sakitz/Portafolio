@@ -121,7 +121,7 @@ const Experiencias = () => {
         className="flex flex-wrap justify-between">
           {fronted.map(({ id, src, title, style }) => (
             <div
-            key={id} className="text-white mb-6">
+            key={id} className="text-white mb-6" data-aos="fade-up-left">
               <Image
                 className={`mx-auto w-[90px] h-[90px]  ${style}`}
                 src={src}
@@ -129,18 +129,18 @@ const Experiencias = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-center pt-2">{title}</p>
+              <p className="text-center pt-2" data-aos="fade-up-right">{title}</p>
             </div>
           ))}
         </article>
         <hr />
       </article>
  
-      <article data-aos = 'fade-left'>
+      <article>
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-green-700 mb-6  transition-all flex ">D<p className="text-white">ata</p>B<p className="text-white">ase</p> <FaDatabase className="ml-4 hover:animate-bounce mt-2" /></h1>
         <article className="flex flex-wrap text-center gap-12">
           {backend.map(({ id, src, title, style }) => (
-            <div key={id} className='text-white mb-6'>
+            <div key={id} className='text-white mb-6' data-aos="fade-up-left">
               <Image
                 className={`mx-auto  w-[90px] h-[90px] ${style}`}
                 src={src}
@@ -148,7 +148,7 @@ const Experiencias = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-center pt-2">{title}</p>
+              <p className="text-center pt-2" data-aos="fade-up-right">{title}</p>
             </div>
           ))}
         </article>
@@ -159,7 +159,7 @@ const Experiencias = () => {
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">T<p className="text-white">ools</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
         <article className="flex flex-wrap text-center gap-16">
           {Tools.map(({ id, src, title, style }) => (
-            <div key={id} className="text-white mb-6">
+            <div key={id} className="text-white mb-6" data-aos="fade-up-left">
               <Image
                 className={`mx-auto   w-[90px] h-[90px] ${style}`}
                 src={src}
@@ -167,7 +167,7 @@ const Experiencias = () => {
                 width={100}
                 height={100}
               />
-              <p className="text-center pt-2">{title}</p>
+              <p className="text-center pt-2" data-aos="fade-up-right">{title}</p>
             </div>
           ))}
         </article>

@@ -47,7 +47,7 @@ const Footer = () => {
     <div
       id="Contacto"
       className="w-full h-screen tlc:mt-[40rem] md:mt-[20rem] xl:mt-0 "
-      data-aos="fade-bottom"
+      data-aos="fade-up-right"
     >
       <h2
         className="text-transparent text-7xl font-bold mb-10 text-center"
@@ -55,43 +55,43 @@ const Footer = () => {
       >
         Proyectos
       </h2>
-      <section class="text-gray-400 body-font">
+      <section className="text-gray-400 body-font">
         <div
-          class="max-w-screen-lg mx-auto h-screen 
+          className="max-w-screen-lg mx-auto h-screen 
                    md:pt-20 xl:pt-0 px-10 md:px-0"
         >
-          <div class="flex flex-col text-center w-full mb-8">
-            <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-white">
+          <div className="flex flex-col text-center w-full mb-8">
+            <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-white">
               Contactame
             </h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Puedes contactarme mediante este formulario o mas abajo esta mis redes / Email.
               
             </p>
           </div>
           <form
-            class="lg:w-1/2 md:w-2/3 mx-auto"
+            className="lg:w-1/2 md:w-2/3 mx-auto"
             ref={form}
             onSubmit={sendEmail}
           >
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-400">
-                    Name
+            <div className="flex flex-wrap -m-2">
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label className="leading-7 text-sm text-gray-400">
+                    Nombre
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="user_name"
                     required
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-400">
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label className="leading-7 text-sm text-gray-400">
                     Email
                   </label>
                   <input
@@ -99,39 +99,39 @@ const Footer = () => {
                     id="email"
                     name="user_email"
                     required
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-gray-400">
-                    Message
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label className="leading-7 text-sm text-gray-400">
+                    Mensaje
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     required
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
-              <div class="p-2 w-full">
+              <div className="p-2 w-full">
                 <button
                   onClick={handleClick}
                   type="submit"
                   value="Enviar"
-                  class="flex mx-auto text-white bg-transparent border-2 border-white transition-all py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg"
+                  className="flex mx-auto text-white bg-transparent border-2 border-white transition-all py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg"
                 >
                   Enviar
                 </button>
               </div>
-              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                <a class="text-blue-500">benjaminlopezmia@gmail.com</a>
-                <p class="leading-normal my-5">
+              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                <a className="text-blue-500">benjaminlopezmia@gmail.com</a>
+                <p className="leading-normal my-5">
                   San miguel de Tucuman, Argentina
                 </p>
-                <span class="inline-flex">
+                <span className="inline-flex">
                   <Link
                     href="https://github.com/sakitz"
                     className="hover:scale-125  transition-all mr-6"

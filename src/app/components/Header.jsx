@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Link from 'next/link'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const Header = () => {
 
@@ -41,12 +41,12 @@ const Header = () => {
   return (
        <header
        id='home'
-       className='w-full h-24 bg-[#0b0b0b] fixed z-50'
+       className='w-full h-fit bg-[#0b0b0b] fixed z-50'
        >
         <section className=' text-white flex justify-between items-center p-8'>
         <Link
           href='#home'
-          className='text-4xl hover:text-[2.75rem] font-bold transition-all'
+          className='text-xl md:text-2xl xl:text-4xl md:hover:text-[2.75rem] font-bold transition-all'
         >
           <motion.h1
              initial={{
@@ -73,8 +73,8 @@ const Header = () => {
               {Links.map(({link, name, id}) => (
                 <motion.li
                   key={id}
-                  className='text-white px-4 cursor-pointer capitalize 
-                  font-medium
+                  className='text-white font-bold px-4 cursor-pointer capitalize 
+
                   after:h-[2px] after:w-0 after:bg-blue-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'
                   initial={{ 
                     x: 485,

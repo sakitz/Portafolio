@@ -32,30 +32,36 @@ const Experiencias = () => {
     },
     {
       id: 4,
+      src: "/experiencias/materialui.webp",
+      title: "Material-UI",
+      style: " hover:scale-125 transition-all"
+    },
+    {
+      id: 5,
       src: "/experiencias/Framer-Motion.jpeg",
       title: "Framer-Motion",
       style: "bg-white hover:scale-125 transition-all"
     },
     {
-      id: 5,
+      id: 6,
       src: "/experiencias/js.png",
       title: "JavaScript",
       style: "hover:scale-125 transition-all"
     },
     {
-      id: 6,
+      id: 7,
       src: "/experiencias/typescript.png",
       title: "TypeScript",
       style: "hover:scale-125 transition-all"
     },
     {
-      id: 7,
+      id: 8,
       src: "/experiencias/react.png",
       title: "React",
       style: "hover:scale-125 transition-all"
     },
     {
-      id: 8,
+      id: 9,
       src: "/experiencias/Next..js.png",
       title: "Next.Js",
       style: "hover:scale-125 transition-all"
@@ -111,63 +117,63 @@ const Experiencias = () => {
   ];
 
   return (
-    <section className="w-full h-screen pt-10" id="Tecnologias" >
+    <section className="w-full h-screen tlmc:pt-[10rem] tlc:pt-[5rem] "id="Tecnologias" >
     <article  className="mb-6 flex flex-col justify-center max-w-screen-lg mx-auto px-10">
     <h1 className="text-6xl text-transparent text-center flex justify-center">Proyectos</h1>
       <article data-aos = 'fade-right'>
-        <h1 className="text-white text-5xl mb-2 text-center font-bold ">Tecnologias</h1>
+        <h1 className="text-white text-5xl mb-2 text-center font-bold pb-[1rem]">Tecnologias</h1>
         <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6  transition-all flex ">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
         <article
-        className="flex flex-wrap justify-between">
+        className="flex flex-wrap tlmc:justify-between lg:justify-start lg:gap-16 xl:gap-4">
           {fronted.map(({ id, src, title, style }) => (
             <div
             key={id} className="text-white mb-6" data-aos="fade-up-left">
               <Image
-                className={`mx-auto w-[90px] h-[90px]  ${style}`}
+                className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
                 alt="imagen"
                 width={100}
                 height={100}
               />
-              <p className="text-center pt-2" data-aos="fade-up-right">{title}</p>
+              <p className="text-center pt-2 tlc:mr-10 xl:mr-0" data-aos="fade-up-right">{title}</p>
             </div>
           ))}
         </article>
         <hr />
       </article>
  
-      <article>
+      <article className="mt-4">
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-green-700 mb-6  transition-all flex ">D<p className="text-white">ata</p>B<p className="text-white">ase</p> <FaDatabase className="ml-4 hover:animate-bounce mt-2" /></h1>
-        <article className="flex flex-wrap text-center gap-12">
+        <article className="flex flex-wrap text-center tlmc:justify-between md:justify-start md:gap-16">
           {backend.map(({ id, src, title, style }) => (
             <div key={id} className='text-white mb-6' data-aos="fade-up-left">
               <Image
-                className={`mx-auto  w-[90px] h-[90px] ${style}`}
+                className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
                 alt="imagen"
                 width={100}
                 height={100}
               />
-              <p className="text-center pt-2" data-aos="fade-up-right">{title}</p>
+              <p className="text-center pt-2 mr-10 xl:mr-0" data-aos="fade-up-right">{title}</p>
             </div>
           ))}
         </article>
-        <hr className="" />
+        <hr />
       </article>
 
       <article data-aos = 'fade-right'>
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">T<p className="text-white">ools</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
-        <article className="flex flex-wrap text-center gap-16">
+        <article className="flex flex-wrap tlmc:justify-between md:justify-start md:gap-12">
           {Tools.map(({ id, src, title, style }) => (
             <div key={id} className="text-white mb-6" data-aos="fade-up-left">
               <Image
-                className={`mx-auto   w-[90px] h-[90px] ${style}`}
+                className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
                 alt="imagen"
                 width={100}
                 height={100}
               />
-              <p className="text-center pt-2" data-aos="fade-up-right">{title}</p>
+              <p className="text-center pt-2 tlc:mr-10 xl:mr-0" data-aos="fade-up-right">{title}</p>
             </div>
           ))}
         </article>

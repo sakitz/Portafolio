@@ -34,7 +34,7 @@ const Proyectos = () => {
   } ,[])
 
   return (
-      <section className="w-full  tlmc:pt-[25rem] tlc:mt-[30rem] tlg:mt-[18rem] sm:pt-0 md:mt-0 lg:mt-[20rem] xl:mt-0"> 
+      <section className="w-full h-screen tlmc:pt-[90rem] tlc:pt-[75rem] md:pt-[20rem] lg:pt-[40rem] xl:pt-[20rem]"> 
                <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>
       <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
       <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>
@@ -47,7 +47,7 @@ const Proyectos = () => {
                   height={1000}
                   src={tetris}
                   alt="imagen"
-                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
+                  className=" tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -97,7 +97,7 @@ const Proyectos = () => {
                   height={1000}
                   src={ecomerce}
                   alt="imagen"
-                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] md:h-[190px] mx-auto my-auto rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -147,7 +147,7 @@ const Proyectos = () => {
                   height={1000}
                   src={tictactoe}
                   alt="imagen"
-                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -197,7 +197,7 @@ const Proyectos = () => {
                   height={1000}
                   src={reactexpense}
                   alt="imagen"
-                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -250,7 +250,7 @@ const Proyectos = () => {
                   height={1000}
                   src={user}
                   alt="imagen"
-                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -300,7 +300,7 @@ const Proyectos = () => {
                   height={1000}
                   src={CRUD}
                   alt="imagen"
-                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 

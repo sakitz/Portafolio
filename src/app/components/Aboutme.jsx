@@ -32,10 +32,10 @@ const Aboutme = () => {
   return (
     <div
       id="Sobre mi"
-      className="h-screen w-full md:h-[50vh] xl:h-screen tlc:mt-10"
+      className="h-screen w-full tlmc:mt-[160rem] md:mt-[55rem] lg:mt-[70rem] xl:mt-[40rem]"
     
     >
-      <h2 className="text-transparent text-7xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>
+      <h2 className="text-transparent text-7xl font-bold mb-12 text-center" id="Proyectos">Proyectos</h2>
       <section
         className="max-w-screen-lg sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 place-content-center items-center px-4 justify-center"
       >
@@ -63,7 +63,7 @@ const Aboutme = () => {
             height={1000000}
             alt="imagen"
             src="/hero.jpg"
-            className="grid-cols-2 place-content-center w-full h-[550px] rounded-2xl border-2 border-blue-500"
+            className="grid-cols-2 place-content-center w-full tlmc:h-[430px] md:h-[550px] rounded-2xl border-2 border-blue-500"
           />
         </article>
       </section>

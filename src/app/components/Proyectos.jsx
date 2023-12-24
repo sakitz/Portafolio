@@ -73,7 +73,7 @@ const Proyectos = () => {
                   href="https://github.com/sakitz/Tetris"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir al repositorio del proyecto"
                 >
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
@@ -81,7 +81,7 @@ const Proyectos = () => {
                   href="https://tetris-one-peach.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir a la web del proyecto"
                 >
                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>
@@ -123,7 +123,7 @@ const Proyectos = () => {
                   href="https://github.com/sakitz/E-Commerce-Js"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir al repositorio del proyecto"
                 >
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
@@ -131,7 +131,7 @@ const Proyectos = () => {
                   href="https://e-commerce-js-opal.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir a la web del proyecto"
                 >
                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>
@@ -173,7 +173,7 @@ const Proyectos = () => {
                   href="https://github.com/sakitz/TicTacToe"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir al repositorio del proyecto"
                 >
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
@@ -181,7 +181,7 @@ const Proyectos = () => {
                   href="https://tic-tac-toe-wheat-nine.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir a la web del proyecto"
                 >
                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>
@@ -226,7 +226,7 @@ const Proyectos = () => {
                   href="https://github.com/sakitz/React-Expense"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir al repositorio del proyecto"
                 >
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
@@ -234,7 +234,7 @@ const Proyectos = () => {
                   href="https://react-expense-tau.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir a la web del proyecto"
                 >
                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>
@@ -276,7 +276,7 @@ const Proyectos = () => {
                   href="https://github.com/sakitz/Nextjs-API-Users"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir al repositorio del proyecto"
                 >
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
@@ -284,7 +284,7 @@ const Proyectos = () => {
                   href="https://nextjs-api-users.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir a la web del proyecto"
                 >
                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>
@@ -329,7 +329,7 @@ const Proyectos = () => {
                   href="https://github.com/sakitz/nextjs-prisma-crud"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir al repositorio del proyecto"
                 >
                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
@@ -337,7 +337,7 @@ const Proyectos = () => {
                   href="https://nextjs-prisma-crud-six-gules.vercel.app/"
                   target="_blank"
                   className="hover:scale-125 transition-all"
-                  alt="COde"
+                  alt="link para ir a la web del proyecto"
                 >
                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>

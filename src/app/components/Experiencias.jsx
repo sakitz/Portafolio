@@ -14,13 +14,13 @@ const Experiencias = () => {
   const fronted = [
     {
       id: 1,
-      src: "/experiencias/html-5.png",
+      src: "/experiencias/html5.webp",
       title: "HTML",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 2,
-      src: "/experiencias/css.png",
+      src: "/experiencias/css.webp",
       title: "CSS",
       style: "hover:scale-125 transition-all"
     },
@@ -38,31 +38,31 @@ const Experiencias = () => {
     },
     {
       id: 5,
-      src: "/experiencias/Framer-Motion.jpeg",
+      src: "/experiencias/Framer-Motion.webp",
       title: "Framer-Motion",
       style: "bg-white hover:scale-125 transition-all"
     },
     {
       id: 6,
-      src: "/experiencias/js.png",
+      src: "/experiencias/js.webp",
       title: "JavaScript",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 7,
-      src: "/experiencias/typescript.png",
+      src: "/experiencias/typescript.webp",
       title: "TypeScript",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 8,
-      src: "/experiencias/react.png",
+      src: "/experiencias/react.webp",
       title: "React",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 9,
-      src: "/experiencias/Next..js.png",
+      src: "/experiencias/next.webp",
       title: "Next.Js",
       style: "hover:scale-125 transition-all"
     },
@@ -71,19 +71,19 @@ const Experiencias = () => {
   const backend = [
     {
       id: 1,
-      src: "/experiencias/Prismaorm.png",
+      src: "/experiencias/Prismaorm.webp",
       title: "Prisma ORM",
       style: "hover:scale-125 transition-all bg-white"
     },
     {
       id: 2,
-      src: "/experiencias/sqlite_logo_icon_169724.png",
+      src: "/experiencias/sqlite_logo_icon_169724.webp",
       title: "SQLite",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 3,
-      src: "/experiencias/st,small,507x507-pad,600x600,f8f8f8.jpg",
+      src: "/experiencias/postgresql.webp",
       title: "PostgreSQL",
       style: "hover:scale-125 transition-all"
     },
@@ -92,25 +92,25 @@ const Experiencias = () => {
   const Tools = [
     {
       id: 1,
-      src: "/experiencias/git.png",
+      src: "/experiencias/git.webp",
       title: "Git",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 2,
-      src: "/experiencias/vite.png",
+      src: "/experiencias/vite.webp",
       title: "Vite",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 3,
-      src: "/experiencias/visual-studio-code7642.jpg",
+      src: "/experiencias/visual-studio-code7642.webp",
       title: "VS Code",
       style: "hover:scale-125 transition-all"
     },
     {
       id: 4,
-      src: "/experiencias/postman.png",
+      src: "/experiencias/postman.webp",
       title: "Postman",
       style: "hover:scale-125 transition-all"
     },
@@ -162,7 +162,7 @@ const Experiencias = () => {
       </article>
 
       <article data-aos = 'fade-right'>
-      <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">T<p className="text-white">ools</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
+      <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">H<p className="text-white">erramientas</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
         <article className="flex flex-wrap tlmc:justify-between md:justify-start md:gap-12">
           {Tools.map(({ id, src, title, style }) => (
             <div key={id} className="text-white mb-6" data-aos="fade-up-left">

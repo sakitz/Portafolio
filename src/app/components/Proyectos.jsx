@@ -7,11 +7,11 @@ import Aos from "aos";
 import 'aos/dist/aos.css'
 
 import tetris from "../../../public/Proyectos/giphytetris.gif";
-import CRUD from "../../../public/Proyectos/CRUD.png";
-import ecomerce from "../../../public/Proyectos/ecomerce.PNG";
-import reactexpense from "../../../public/Proyectos/react-expense.PNG";
+import CRUD from "../../../public/Proyectos/CRUD.webp";
+import ecomerce from "../../../public/Proyectos/ecomerce.webp";
+import reactexpense from "../../../public/Proyectos/react-expense.webp";
 import tictactoe from "../../../public/giphy tictactoe.gif";
-import user from "../../../public/Proyectos/users.PNG";
+import user from "../../../public/Proyectos/users.webp";
 
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";

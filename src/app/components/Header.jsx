@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
+
 const Header = () => {
 
   const [nav, setNav] = useState()
@@ -65,9 +66,9 @@ const Header = () => {
             className=' font-Logo'
           >
             Benjamin L.
-          </motion.h1>
-          
+          </motion.h1>  
         </Link>
+
           
           <ul className='hidden md:flex'>
               {Links.map(({link, name, id}) => (

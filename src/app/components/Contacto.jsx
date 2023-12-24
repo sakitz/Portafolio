@@ -112,7 +112,7 @@ const Footer = () => {
                     name="user_name"
                 
                     required
-                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 bg-opacity-40  rounded border border-gray-700  focus:bg-gray-900 focus:ring-2 focus:border-violet-600 focus:ring-violet-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -127,7 +127,7 @@ const Footer = () => {
                     name="user_email"
           
                     required
-                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-900 focus:ring-2  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                     name="message"
                     required
                     
-                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-900 focus:ring-2  h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
@@ -150,13 +150,13 @@ const Footer = () => {
                   onClick={handleClick}
                   type="submit"
                   value="Enviar"
-                  className="flex mx-auto text-white bg-transparent border-2 border-white transition-all py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg"
+                  className="flex mx-auto text-white bg-transparent border-2 border-white transition-all py-2 px-8 focus:outline-none hover:bg-violet-700 rounded text-lg"
                 >
                   Enviar
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                <a className="text-blue-500">benjaminlopezmia@gmail.com</a>
+                <a className="text-violet-600">benjaminlopezmia@gmail.com</a>
                 <p className="leading-normal my-5">
                   San miguel de Tucuman, Argentina
                 </p>

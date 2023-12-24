@@ -4,8 +4,9 @@ import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import ParticlesBackgraund from './ParticlesBackgraund'
 import { motion } from 'framer-motion'
-const HomePage = () => {
 
+
+const HomePage = () => {
   const cvs = [
     {
       id:0,
@@ -19,7 +20,6 @@ const HomePage = () => {
     }
   ]
   return (
-
     <main
       id='Perfil' 
       className='w-full h-screen'
@@ -33,7 +33,7 @@ const HomePage = () => {
         <motion.article initial={{ x: -1000 }}animate={{ x: 0 }}transition={{duration: 1,ease: 'easeInOut',type: 'spring'}}
         className='flex flex-col justify-center mr-6'> 
           <h1 className='text-2xl md:text-3xl font-medium text-white mb-2' >
-          Hola!, soy  <span className='text-blue-700'>Benjamin </span>
+          Hola!, soy  <span className='text-blue-600'>Benjamin </span>
           </h1>
           <p className='text-2xl md:text-5xl text-white font-bold pt-2'>
               <TypeAnimation
@@ -46,7 +46,7 @@ const HomePage = () => {
 
           <p className='text-[1rem] text-white mt-4'>
             Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento. <br />
-            <span>Dispuesto a aprender progresivamente y estudiar nuevas tecnologías, si el trabajo lo requiere.</span>
+            
           </p>
             <article className='flex mt-6 mb-4'>
               {cvs.map(({id, child, href, download})  => (

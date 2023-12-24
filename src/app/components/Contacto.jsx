@@ -155,7 +155,7 @@ const Footer = () => {
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                <a className="text-violet-600">benjaminlopezmia@gmail.com</a>
+                <p className="text-violet-600">benjaminlopezmia@gmail.com</p>
                 <p className="leading-normal my-5">
                   San miguel de Tucuman, Argentina
                 </p>

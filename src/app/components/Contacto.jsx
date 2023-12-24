@@ -71,16 +71,16 @@ const Footer = () => {
   };
 
   return (
-    <div
+    <section
       className="w-full h-screen"
       data-aos="flip-left"
     >
-      <section className="text-gray-400 body-font">
+      <article className="text-gray-400 body-font">
         <div
           className="max-w-screen-lg mx-auto h-screen 
                     px-10 md:px-0 tlmc:pt-[45rem] tlc:pt-[30rem] md:pt-[5rem] 2xl:pt-[10rem]"
         >
-          <div className="flex flex-col text-center w-full mb-8">
+          <article className="flex flex-col text-center w-full mb-8">
           <h2
       id="Contacto"
         className="text-transparent text-9xl  font-normal text-center"
@@ -94,14 +94,14 @@ const Footer = () => {
               Puedes contactarme mediante este formulario o mas abajo esta mis redes / Email.
               
             </p>
-          </div>
+          </article>
           <form
             className="lg:w-1/2 md:w-2/3 mx-auto"
             ref={form}
             onSubmit={(e) => e.preventDefault()}
           >
-            <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
+            <article className="flex flex-wrap -m-2">
+              <section className="p-2 w-1/2">
                 <div className="relative">
                   <label className="leading-7 text-sm text-gray-400">
                     Nombre
@@ -115,8 +115,8 @@ const Footer = () => {
                     className="w-full bg-gray-800 bg-opacity-40  rounded border border-gray-700  focus:bg-gray-900 focus:ring-2 focus:border-violet-600 focus:ring-violet-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
-              </div>
-              <div className="p-2 w-1/2">
+              </section>
+              <section className="p-2 w-1/2">
                 <div className="relative">
                   <label className="leading-7 text-sm text-gray-400">
                     Email
@@ -130,8 +130,8 @@ const Footer = () => {
                     className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-900 focus:ring-2  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
-              </div>
-              <div className="p-2 w-full">
+              </section>
+              <section className="p-2 w-full">
                 <div className="relative">
                   <label className="leading-7 text-sm text-gray-400">
                     Mensaje
@@ -140,11 +140,10 @@ const Footer = () => {
                     id="message"
                     name="message"
                     required
-                    
                     className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-900 focus:ring-2  h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
-              </div>
+              </section>
               <div className="p-2 w-full">
                 <button
                   onClick={handleClick}
@@ -180,11 +179,11 @@ const Footer = () => {
                   </Link>
                 </span>
               </div>
-            </div>
+            </article>
           </form>
         </div>
-      </section>
-    </div>
+      </article>
+    </section>
   );
 };
 

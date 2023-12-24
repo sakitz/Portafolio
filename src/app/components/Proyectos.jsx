@@ -46,7 +46,7 @@ const Proyectos = () => {
                   width={1000}
                   height={1000}
                   src={tetris}
-                  alt="imagen"
+                  alt="imagen de un tetris"
                   className=" tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
@@ -96,7 +96,7 @@ const Proyectos = () => {
                   width={7000}
                   height={1000}
                   src={ecomerce}
-                  alt="imagen"
+                  alt="imagen de un ecommerce"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] md:h-[190px] mx-auto my-auto rounded-md hover:scale-105 transition-all"
                 />
               </article>
@@ -146,7 +146,7 @@ const Proyectos = () => {
                   width={7000}
                   height={1000}
                   src={tictactoe}
-                  alt="imagen"
+                  alt="imagen de un tic-tac-toe"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
@@ -196,7 +196,7 @@ const Proyectos = () => {
                   width={7000}
                   height={1000}
                   src={reactexpense}
-                  alt="imagen"
+                  alt="imagen de una expensa con grafico de pie"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
@@ -249,7 +249,7 @@ const Proyectos = () => {
                   width={7000}
                   height={1000}
                   src={user}
-                  alt="imagen"
+                  alt="imagen de usuarios"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
@@ -299,7 +299,7 @@ const Proyectos = () => {
                   width={7000}
                   height={1000}
                   src={CRUD}
-                  alt="imagen"
+                  alt="notas CRUD"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>

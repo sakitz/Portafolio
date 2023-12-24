@@ -131,7 +131,7 @@ const Experiencias = () => {
               <Image
                 className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
-                alt="imagen"
+                alt="tecnologias frontend"
                 width={100}
                 height={100}
               />
@@ -150,7 +150,7 @@ const Experiencias = () => {
               <Image
                 className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
-                alt="imagen"
+                alt="bases de datos"
                 width={100}
                 height={100}
               />
@@ -169,7 +169,7 @@ const Experiencias = () => {
               <Image
                 className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
-                alt="imagen"
+                alt="herramientas que utilizo"
                 width={100}
                 height={100}
               />

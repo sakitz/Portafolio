@@ -4,21 +4,23 @@ import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import ParticlesBackgraund from './ParticlesBackgraund'
 import { motion } from 'framer-motion'
-
+import { LuFileSpreadsheet } from "react-icons/lu";
 
 const HomePage = () => {
-  const cvs = [
+
+  const links = [
     {
-      id:0,
+      id:1,
       child: (
-          <button className='flex gap-x-4 justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-md hover:bg-blue-800 transition-all hover:text-white'>
-            Descargar CV 
-          </button> 
-      ),
-      href: '../../../CV/benjamin-Ll.pdf',
+        <>
+        Resume <LuFileSpreadsheet size={30}/>
+       </> 
+    ),
+      href: '../../../CV/benjamin-L.pdf',
       download: true,
-    }
-  ]
+  },
+]
+
   return (
     <main
       id='Perfil' 
@@ -33,11 +35,11 @@ const HomePage = () => {
         <motion.article initial={{ x: -1000 }}animate={{ x: 0 }}transition={{duration: 1,ease: 'easeInOut',type: 'spring'}}
         className='flex flex-col justify-center mr-6'> 
           <h1 className='text-2xl md:text-3xl font-medium text-white mb-2' >
-          Hola!, soy  <span className='text-blue-600'>Benjamin </span>
+          Hola!, soy  <span className='text-violet-700'>Benjamin </span>
           </h1>
           <p className='text-2xl md:text-5xl text-white font-bold pt-2'>
               <TypeAnimation
-             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'FronEnd', 600,'Desarrollador Web',600,'FrontEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'FronEnd', 600,'Desarrollador Web',600,'FrontEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'FronEnd', 600,'Desarrollador Web',600,'FrontEnd',600,'Desarrollador Web.',600,
+             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'Desarrollador Web', 600
             ]}
             speed={300}  
             >
@@ -49,15 +51,21 @@ const HomePage = () => {
             
           </p>
             <article className='flex mt-6 mb-4'>
-              {cvs.map(({id, child, href, download})  => (
-                <span 
-                key={id}>
-                  <a href={href} download={download}>
-                    {child}
-                  </a>
-                </span>
-                
+              <ul>
+                 {links.map(({id, child, href, download}) => (
+                <li key={id} className='flex gap-x-4 text-xl justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-md hover:bg-violet-800 transition-all hover:text-white'>
+                    <a 
+                      href={href} 
+                      download={download} 
+                      target='_blank'
+                      rel='noreferrer'
+                      className='flex gap-2'
+                      >{child}</a>
+                </li>
               ))}
+          
+              </ul>
+             
             </article>
         </motion.article>
         
@@ -80,7 +88,7 @@ const HomePage = () => {
               src='/giphy2.webp'
               width={500}
               height={500}
-              alt='imagen'
+              alt='imagen de inicio'
               className='rounded-2xl 
                tlmc:hidden
                xl:block

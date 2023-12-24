@@ -54,8 +54,8 @@ const Aboutme = () => {
           </p><br />
 
           <section className="h-fit tlmc:h-fit md:w-full grid grid-cols-2 tlmc:grid-rows-1 md:grid-rows-2 gap-2">
-            <Image src='/horario.webp' width={10000} height={1000} alt="imagen" className="hidden md:inline-block col-span-2 w-full h-36 rounded-md border-2 border-violet-700" />
-            <Image src="/retro-unscreen.webp" width={1000} height={1000} alt="imagen" className="border border-violet-700 bg-blue-950 rounded-md w-full h-40 tlmc:hidden md:inline-block"/>
+            <Image src='/horario.webp' width={10000} height={1000} alt="gif de horario retro" className="hidden md:inline-block col-span-2 w-full h-36 rounded-md border-2 border-violet-700" />
+            <Image src="/retro-unscreen.webp" width={1000} height={1000} alt="imagen de personaje retro" className="border border-violet-700 bg-blue-950 rounded-md w-full h-40 tlmc:hidden md:inline-block"/>
             <p className="tlmc:col-span-2 md:col-span-1 text-white font-bold font-Logo text-3xl rounded-md bg-gradient-to-br from-violet-700 via-violet-800 to-violet-950 w-full h-40 grid place-content-center border-2 border-violet-700 ">{loading ? ( <span>Cargando...</span> ) : ( <span> {currentHour}<span className="animate-pulse">.</span></span>)}</p>
             <p className="col-span-2 w-fit h-fit text-violet-600 text-xl place-content-center"> Si te ha gustado mi perfil, podrías contactarme en la siguiente sección.</p>
           </section>
@@ -67,7 +67,7 @@ const Aboutme = () => {
           <Image
             width={1000000}
             height={1000000}
-            alt="imagen"
+            alt="mi foto"
             src="/hero.webp"
             className="grid-cols-2 place-content-center w-full tlmc:h-[430px] md:h-[550px] rounded-2xl border-2 border-blue-500"
           />

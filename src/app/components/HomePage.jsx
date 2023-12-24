@@ -77,7 +77,7 @@ const HomePage = () => {
           }}
           >
             <Image 
-              src='/giphy2.gif'
+              src='/giphy2.webp'
               width={500}
               height={500}
               alt='imagen'

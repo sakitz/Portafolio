@@ -6,11 +6,11 @@ import Image from "next/image";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 
-import tetris from "../../../public/Proyectos/giphytetris.gif";
+import tetris from "../../../public/Proyectos/giphytetris.webp";
 import CRUD from "../../../public/Proyectos/CRUD.webp";
 import ecomerce from "../../../public/Proyectos/ecomerce.webp";
 import reactexpense from "../../../public/Proyectos/react-expense.webp";
-import tictactoe from "../../../public/giphy tictactoe.gif";
+import tictactoe from "../../../public/giphy tictactoe.webp";
 import user from "../../../public/Proyectos/users.webp";
 
 import { IoLogoJavascript } from "react-icons/io5";
@@ -34,7 +34,7 @@ const Proyectos = () => {
   } ,[])
 
   return (
-      <section className="w-full h-screen tlmc:pt-[90rem] tlc:pt-[75rem] md:pt-[20rem] lg:pt-[40rem] xl:pt-[20rem]"> 
+      <section className="w-full h-screen tlmc:pt-[85rem] tlc:pt-[75rem] md:pt-[15rem] lg:pt-[40rem] xl:pt-[20rem]"> 
                <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>
       <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
       <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>

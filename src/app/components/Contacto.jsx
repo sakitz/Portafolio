@@ -78,7 +78,7 @@ const Footer = () => {
       <section className="text-gray-400 body-font">
         <div
           className="max-w-screen-lg mx-auto h-screen 
-                    px-10 md:px-0 tlmc:pt-[50rem] tlc:pt-[35rem] md:pt-[20rem] 2xl:pt-[10rem]"
+                    px-10 md:px-0 tlmc:pt-[45rem] tlc:pt-[30rem] md:pt-[5rem] 2xl:pt-[10rem]"
         >
           <div className="flex flex-col text-center w-full mb-8">
           <h2

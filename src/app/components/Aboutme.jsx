@@ -32,7 +32,7 @@ const Aboutme = () => {
   return (
     <div
       id="Sobre mi"
-      className="h-screen w-full tlmc:mt-[160rem] md:mt-[55rem] lg:mt-[70rem] xl:mt-[40rem]"
+      className="h-screen w-full tlmc:mt-[155rem] md:mt-[45rem] lg:mt-[70rem] xl:mt-[40rem]"
     
     >
       <h2 className="text-transparent text-7xl font-bold mb-12 text-center" id="Proyectos">Proyectos</h2>
@@ -54,8 +54,8 @@ const Aboutme = () => {
           </p><br />
 
           <section className="h-fit tlmc:h-fit md:w-full grid grid-cols-2 tlmc:grid-rows-1 md:grid-rows-2 gap-2">
-            <Image src='/horario.gif' width={10000} height={1000} alt="imagen" className="hidden md:inline-block col-span-2 w-full h-36 rounded-md border-2 border-violet-700" />
-            <Image src="/retro-unscreen.gif" width={1000} height={1000} alt="imagen" className="border border-violet-700 bg-blue-950 rounded-md w-full h-40 tlmc:hidden md:inline-block"/>
+            <Image src='/horario.webp' width={10000} height={1000} alt="imagen" className="hidden md:inline-block col-span-2 w-full h-36 rounded-md border-2 border-violet-700" />
+            <Image src="/retro-unscreen.webp" width={1000} height={1000} alt="imagen" className="border border-violet-700 bg-blue-950 rounded-md w-full h-40 tlmc:hidden md:inline-block"/>
             <p className="tlmc:col-span-2 md:col-span-1 text-white font-bold font-Logo text-3xl rounded-md bg-gradient-to-br from-violet-700 via-violet-800 to-violet-950 w-full h-40 grid place-content-center border-2 border-violet-700 ">{loading ? ( <span>Cargando...</span> ) : ( <span> {currentHour}<span className="animate-pulse">.</span></span>)}</p>
             <p className="col-span-2 w-fit h-fit text-violet-600 text-xl place-content-center"> Si te ha gustado mi perfil, podrías contactarme en la siguiente sección.</p>
           </section>

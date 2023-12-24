@@ -26,7 +26,7 @@ const Experiencias = () => {
     },
     {
       id: 3,
-      src: "/experiencias/tailwind.jpeg",
+      src: "/experiencias/tailwindCss.webp",
       title: "TailwindCss",
       style: "hover:scale-125 transition-all"
     },
@@ -117,7 +117,7 @@ const Experiencias = () => {
   ];
 
   return (
-    <section className="w-full h-screen tlmc:pt-[10rem] tlc:pt-[5rem] "id="Tecnologias" >
+    <section className="w-full h-screen tlmc:pt-[5rem] tlc:pt-[5rem] "id="Tecnologias" >
     <article  className="mb-6 flex flex-col justify-center max-w-screen-lg mx-auto px-10">
     <h1 className="text-6xl text-transparent text-center flex justify-center">Proyectos</h1>
       <article data-aos = 'fade-right'>

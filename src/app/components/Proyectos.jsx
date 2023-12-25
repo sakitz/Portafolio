@@ -75,7 +75,7 @@ const Proyectos = () => {
                   className="hover:scale-125 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-2" size={30} />
+                   <FaGithub className="text-white mr-2" size={30} />
                 </Link>
                 <Link
                   href="https://tetris-one-peach.vercel.app/"
@@ -83,7 +83,7 @@ const Proyectos = () => {
                   className="hover:scale-125 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} />
+                   <MdOutlineComputer className="text-white " size={30} />
                 </Link>
               </article>
             </div>

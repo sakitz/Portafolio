@@ -95,7 +95,7 @@ const Footer = () => {
                 id="name"
                 name="user_name"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:bg-gray-900 focus:ring-2 focus:border-violet-600 focus:ring-violet-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-gray-800 bg-opacity-40 border-white focus:bg-gray-800 focus:border-violet-600 focus:ring-violet-900 rounded border text-gray-800 transition-colors duration-200 ease-in-out  focus:ring-2 text-base outline-none py-1 px-3 leading-8"
               />
             </label>
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
                 id="email"
                 name="user_email"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-900 focus:ring-2 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-800 focus:ring-2 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </label>
           </div>
@@ -118,7 +118,7 @@ const Footer = () => {
                 id="message"
                 name="message"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-900 focus:ring-2 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-800 focus:ring-2 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </label>
           </div>

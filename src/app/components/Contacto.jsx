@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect} from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -13,14 +13,7 @@ const Footer = () => {
 
   const form = useRef(null);
 
-  const [formState, setFormState] = useState({
-    user_name: '',
-    user_email: '',
-    message: '',
-  });
-
   const sendEmail = () => {
-    // Validar el formulario con Email.js
     emailjs.sendForm(
       'service_s3paadw',
       'template_5r7b7rg',
@@ -28,9 +21,6 @@ const Footer = () => {
       'tptWp-gmiBzkz-D5I'
     )
       .then((result) => {
-        console.log(result.text);
-        // Aquí puedes realizar acciones adicionales después de enviar el correo si es necesario
-        // Mostrar el mensaje de éxito
         Swal.fire({
           position: 'center',
           icon: 'success',
@@ -40,8 +30,6 @@ const Footer = () => {
         });
       })
       .catch((error) => {
-        console.log(error.text);
-        // Mostrar un mensaje de error si hay algún problema con el envío del correo
         Swal.fire({
           icon: 'error',
           title: 'Error',
@@ -52,16 +40,13 @@ const Footer = () => {
 
 
   const handleClick = () => {
-    // Validar que todos los campos estén completos
     if (
       form.current.user_name.value &&
       form.current.user_email.value &&
       form.current.message.value
     ) {
-      // Enviar el correo
       sendEmail();
     } else {
-      // Mostrar un mensaje de error si algún campo está vacío
       Swal.fire({
         icon: 'error',
         title: 'Error',

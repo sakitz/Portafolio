@@ -1,5 +1,4 @@
 "use client"
-import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import ParticlesBackgraund from './ParticlesBackgraund'
@@ -63,12 +62,9 @@ const HomePage = () => {
                       >{child}</a>
                 </li>
               ))}
-          
-              </ul>
-             
+              </ul>   
             </article>
         </motion.article>
-        
           <motion.article
           initial={{ 
             y: -1000, 
@@ -100,8 +96,7 @@ const HomePage = () => {
               md:max-w-lg'
             />
           </motion.article>
-      </section>
-          
+      </section>      
     </main>
   )
 }

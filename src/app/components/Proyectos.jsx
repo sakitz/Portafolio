@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
@@ -25,14 +25,10 @@ import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPrisma } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
-
-
 const Proyectos = () => {
-
   useEffect(() => {
     Aos.init()
   } ,[])
-
   return (
       <section className="w-full h-screen tlmc:pt-[85rem] tlc:pt-[75rem] md:pt-[15rem] lg:pt-[40rem] xl:pt-[20rem]"> 
                <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>

@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { FaReact } from "react-icons/fa";
 import { GrTools } from "react-icons/gr";

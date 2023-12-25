@@ -43,8 +43,8 @@ const Proyectos = () => {
             <div className="relative flex max-w-lg p-2  bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={256}
-                  height={256}
+                  width={250}
+                  height={200}
                   src={tetris}
                   alt="imagen de un tetris"
                   className=" tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"

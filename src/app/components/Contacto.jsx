@@ -71,7 +71,7 @@ const Footer = () => {
   };
 
   return (
-    <section className="w-full h-screen" data-aos="flip-left">
+    <section className="w-full h-screen 2xl:mb-10" data-aos="flip-left">
     <article className="text-gray-400 body-font max-w-screen-lg mx-auto h-screen px-10 md:px-0 tlmc:pt-[45rem] tlc:pt-[30rem] md:pt-[5rem] 2xl:pt-[10rem]">
       <header className="flex flex-col text-center w-full mb-8">
         <h1 id="Contacto" className="text-transparent text-9xl font-normal text-center">
@@ -80,7 +80,7 @@ const Footer = () => {
         <h2 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-white">
           Contactame
         </h2>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <p className="lg:w-2/3 mx-auto leading-relaxed text-violet-600 text-base">
           Puedes contactarme mediante este formulario o más abajo están mis redes / Email.
         </p>
       </header>
@@ -88,7 +88,7 @@ const Footer = () => {
       <form className="lg:w-1/2 md:w-2/3 mx-auto" ref={form} onSubmit={(e) => e.preventDefault()}>
         <div className="flex flex-wrap -m-2">
           <div className="p-2 w-1/2">
-            <label className="block leading-7 text-sm text-gray-400 mb-2">
+            <label className="block leading-7 text-sm text-white mb-2">
               Nombre
               <input
                 type="text"
@@ -100,7 +100,7 @@ const Footer = () => {
             </label>
           </div>
           <div className="p-2 w-1/2">
-            <label className="block leading-7 text-sm text-gray-400 mb-2">
+            <label className="block leading-7 text-sm text-white mb-2">
               Email
               <input
                 type="email"
@@ -112,7 +112,7 @@ const Footer = () => {
             </label>
           </div>
           <div className="p-2 w-full">
-            <label className="block leading-7 text-sm text-gray-400 mb-2">
+            <label className="block leading-7 text-sm text-white mb-2">
               Mensaje
               <textarea
                 id="message"
@@ -135,7 +135,7 @@ const Footer = () => {
   
         <div className="pt-8 mt-8 border-t border-gray-800 text-center">
           <p className="text-violet-600">benjaminlopezmia@gmail.com</p>
-          <p className="leading-normal my-5">
+          <p className="leading-normal text-white my-5">
             San Miguel de Tucumán, Argentina
           </p>
           <span className="inline-flex">

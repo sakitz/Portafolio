@@ -39,12 +39,12 @@ const Proyectos = () => {
       <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
       <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>
         <article className="grid place-content-center gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="grid place-content-center justify-between rounded-lg" data-aos = 'flip-down'>
+        <div className="grid place-content-center justify-between rounded-lg" data-aos = 'flip-down'>
             <div className="relative flex max-w-lg p-2  bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={1000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   src={tetris}
                   alt="imagen de un tetris"
                   className=" tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
@@ -68,33 +68,32 @@ const Proyectos = () => {
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-4 flex flex-center text-white">
+              <article className="absolute right-4 bottom-0 flex flex-center text-white">
                 <Link
                   href="https://github.com/sakitz/Tetris"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                   <FaGithub className="text-white mr-2" size={30} />
+                   <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://tetris-one-peach.vercel.app/"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all right-6"
                   alt="link para ir a la web del proyecto"
                 >
-                   <MdOutlineComputer className="text-white " size={30} />
+                   <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
           </div>
-
           <div className="grid place-content-center justify-between rounded-lg"  data-aos = 'flip-down'>
             <div className="relative flex max-w-lg p-2 bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={7000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   src={ecomerce}
                   alt="imagen de un ecommerce"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] md:h-[190px] mx-auto my-auto rounded-md hover:scale-105 transition-all"
@@ -118,22 +117,22 @@ const Proyectos = () => {
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-4 flex flex-center text-white">
+              <article className="absolute right-4 bottom-0 flex flex-center text-white">
                 <Link
                   href="https://github.com/sakitz/E-Commerce-Js"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-2" size={30} />
+                  <FaGithub className="text-white mr-4" size={25} /><span>Code</span>
                 </Link>
                 <Link
                   href="https://e-commerce-js-opal.vercel.app/"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} />
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -143,8 +142,8 @@ const Proyectos = () => {
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={7000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   src={tictactoe}
                   alt="imagen de un tic-tac-toe"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
@@ -158,7 +157,7 @@ const Proyectos = () => {
 
                 <ul className="flex flex-wrap gap-2 rounded-md text-white">
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
-                    <FaReact className="hover:animate-spin" size={30} />{" "}
+                    <FaReact className="hover:animate-spin" size={25} />{" "}
                   </li>
                   <li className="hover:text-blue-600 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <SiTypescript size={30} className="hover:animate-pulse" />
@@ -168,22 +167,22 @@ const Proyectos = () => {
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-4 flex flex-center text-white">
+              <article className="absolute right-4 bottom-0 flex flex-center text-white">
                 <Link
                   href="https://github.com/sakitz/TicTacToe"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-2" size={30} />
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://tic-tac-toe-wheat-nine.vercel.app/"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} />
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -193,8 +192,8 @@ const Proyectos = () => {
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={7000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   src={reactexpense}
                   alt="imagen de una expensa con grafico de pie"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
@@ -208,7 +207,7 @@ const Proyectos = () => {
 
                 <ul className="flex flex-wrap gap-2 rounded-md text-white">
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
-                    <FaReact className="hover:animate-spin" size={30} />
+                    <FaReact className="hover:animate-spin" size={25} />
                   </li>
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <SiTypescript size={30} />
@@ -221,22 +220,22 @@ const Proyectos = () => {
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-4 flex flex-center text-white">
+              <article className="absolute right-4 bottom-0 flex flex-center text-white">
                 <Link
                   href="https://github.com/sakitz/React-Expense"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-2" size={30} />
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://react-expense-tau.vercel.app/"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} />
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -246,8 +245,8 @@ const Proyectos = () => {
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={7000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   src={user}
                   alt="imagen de usuarios"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
@@ -261,7 +260,7 @@ const Proyectos = () => {
 
                 <ul className="flex flex-wrap gap-2 rounded-md text-white">
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
-                    <FaReact className="hover:animate-spin" size={30} />
+                    <FaReact className="hover:animate-spin" size={25} />
                   </li>
                   <li className=" hover:text-stone-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <TbBrandNextjs size={30} className="hover:animate-pulse" />
@@ -271,22 +270,22 @@ const Proyectos = () => {
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-4 flex flex-center text-white">
+              <article className="absolute right-4 bottom-0 flex flex-center text-white">
                 <Link
                   href="https://github.com/sakitz/Nextjs-API-Users"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-2" size={30} />
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://nextjs-api-users.vercel.app/"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} />
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -296,8 +295,8 @@ const Proyectos = () => {
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={7000}
-                  height={1000}
+                  width={500}
+                  height={500}
                   src={CRUD}
                   alt="notas CRUD"
                   className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
@@ -311,7 +310,7 @@ const Proyectos = () => {
 
                 <ul className="flex flex-wrap gap-2 rounded-md text-white">
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
-                    <FaReact className="hover:animate-spin" size={30} />
+                    <FaReact className="hover:animate-spin" size={25} />
                   </li>
                   <li className="hover:text-stone-600 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <TbBrandNextjs size={30} />
@@ -324,22 +323,22 @@ const Proyectos = () => {
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-4 flex flex-center text-white">
+              <article className="absolute right-4 bottom-0 flex flex-center text-white">
                 <Link
                   href="https://github.com/sakitz/nextjs-prisma-crud"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-2" size={30} />
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://nextjs-prisma-crud-six-gules.vercel.app/"
                   target="_blank"
-                  className="hover:scale-125 transition-all"
+                  className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} />
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>

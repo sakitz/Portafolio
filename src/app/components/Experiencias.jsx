@@ -132,8 +132,8 @@ const Experiencias = () => {
                 className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
                 alt="tecnologias frontend"
-                width={100}
-                height={100}
+                width={256}
+                height={236}
               />
               <p className="text-center pt-2 tlc:mr-10 xl:mr-0" data-aos="fade-up-right">{title}</p>
             </div>
@@ -151,8 +151,8 @@ const Experiencias = () => {
                 className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
                 alt="bases de datos"
-                width={100}
-                height={100}
+                width={256}
+                height={311}
               />
               <p className="text-center pt-2 mr-10 xl:mr-0" data-aos="fade-up-right">{title}</p>
             </div>
@@ -170,8 +170,8 @@ const Experiencias = () => {
                 className={`mx-auto w-[90px] h-[90px] tlc:mr-10 xl:mr-0 ${style}`}
                 src={src}
                 alt="herramientas que utilizo"
-                width={100}
-                height={100}
+                width={256}
+                height={256}
               />
               <p className="text-center pt-2 tlc:mr-10 xl:mr-0" data-aos="fade-up-right">{title}</p>
             </div>

@@ -91,11 +91,11 @@ const Proyectos = () => {
             <div className="relative flex max-w-lg p-2 bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
-                  width={1080}
-                  height={860}
+                  width={230}
+                  height={190}
                   src={ecomerce}
                   alt="imagen de un ecommerce"
-                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] md:h-[190px] mx-auto my-auto rounded-md hover:scale-105 transition-all"
+                  className="w-[230px] h-[190px] mx-auto my-auto rounded-md hover:scale-105 transition-all"
                 />
               </article>
 

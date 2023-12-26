@@ -30,8 +30,8 @@ module.exports = {
       },
       fontFamily:{
         'Logo': ['Silkscreen', 'sans-serif' ]
-      }
+      },
     },
-  },
   plugins: [],
+  },
 }

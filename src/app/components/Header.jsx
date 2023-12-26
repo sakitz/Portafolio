@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 
@@ -49,48 +48,20 @@ const Header = () => {
           href='#home'
           className='text-xl md:text-2xl xl:text-4xl md:hover:text-[2.75rem] font-bold transition-all'
         >
-          <motion.h1
-             initial={{
-              opacity:0,
-              x: -100
-             }}
-             animate={{
-               opacity: 1,
-               x:0
-            }}
-             transition={{
-              duration: 0.5,
-              ease: "easeIn",
-             
-            }}
-            className=' font-Logo'
-          >
+          <h1 className=' font-Logo'>
             Benjamin L.
-          </motion.h1>  
+          </h1>  
         </Link>
 
           
           <ul className='hidden md:flex'>
               {Links.map(({link, name, id}) => (
-                <motion.li
+                <li
                   key={id}
                   className='text-white font-bold px-4 cursor-pointer
-                  after:h-[2px] after:w-0 after:bg-violet-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'
-                  initial={{ 
-                    x: 485,
-                    opacity: 0 
-                  }}
-                  animate={{
-                    x: 0,
-                    opacity:1
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeIn",
-                  }}
-                >
+                  after:h-[2px] after:w-0 after:bg-violet-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'>
                     <Link href={link} duration={500}>{name}</Link>
-                </motion.li>
+                </li>
                 ))}
           </ul>
           <article
@@ -106,27 +77,13 @@ const Header = () => {
             items-center top-0 left-0 w-full h-screen bg-gradient-to-b 
           from-blue-800 to-black text-white'>
               {Links.map(({link, name, id})  => (
-                <motion.li
-                initial={{ 
-                  x: 485,
-                  opacity: 0 
-                }}
-                animate={{
-                  x: 0,
-                  opacity:1
-                }}
-                transition={{
-                  duration: 0.5,
-                  ease: "easeIn",
-                }}
-                key={id}
-                className='px-4 cursor-pointer py-6 text-4xl'
-                >
+                <li
+                  key={id}
+                  className='px-4 py-6 text-4xl'>
                   <Link onClick={() => setNav(!nav)} href={link} duration={500}>
-                            <p className='hover:scale-125
-                            after:h-[2px] after:w-0 after:bg-white after:block after:transition-all duration-[500ms] hover:after:w-[100%] text-white captalize text-4xl'>{name}</p>
+                            <p className='text-white'>{name}</p>
                   </Link>      
-                </motion.li>
+                </li>
               ))}
             </ul>
           )}

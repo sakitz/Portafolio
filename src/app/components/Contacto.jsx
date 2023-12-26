@@ -14,38 +14,35 @@ const Footer = () => {
   const form = useRef(null);
 
   const sendEmail = () => {
-    emailjs.sendForm(
-      'service_s3paadw',
-      'template_5r7b7rg',
-      form.current,
-      'tptWp-gmiBzkz-D5I'
-    )
-      .then((result) => {
-        Swal.fire({
-          position: 'center',
-          icon: 'success',
-          title: 'Tu Correo fue enviado.',
-          showConfirmButton: false,
-          timer: 1500,
+    const userName = form.current.user_name.value;
+    const userEmail = form.current.user_email.value;
+    const message = form.current.message.value;
+  
+    // Verificar que todos los campos estén llenos antes de enviar el correo
+    if (userName && userEmail && message) {
+      emailjs
+        .sendForm(
+          'service_s3paadw',
+          'template_5r7b7rg',
+          form.current,
+          'tptWp-gmiBzkz-D5I'
+        )
+        .then(() => {
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Tu Correo fue enviado.',
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        })
+        .catch((error) => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Hubo un problema al enviar el correo. Por favor, inténtalo de nuevo.',
+          });
         });
-      })
-      .catch((error) => {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Hubo un problema al enviar el correo. Por favor, intenta de nuevo más tarde.',
-        });
-      });
-  };
-
-
-  const handleClick = () => {
-    if (
-      form.current.user_name.value &&
-      form.current.user_email.value &&
-      form.current.message.value
-    ) {
-      sendEmail();
     } else {
       Swal.fire({
         icon: 'error',
@@ -53,6 +50,10 @@ const Footer = () => {
         text: 'Por favor, completa todos los campos del formulario.',
       });
     }
+  };
+  
+  const handleClick = () => {
+    sendEmail();
   };
 
   return (

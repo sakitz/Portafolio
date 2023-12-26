@@ -23,35 +23,74 @@ const HomePage = () => {
                            flex flex-col items-center h-full md:px-4 px-10 justify-center
                            md:flex-row md:justify-center'>
               
-        <motion.article
-        initial={{
-          scale: 0,
-        }}
-        animate={{
-          scale: 1,
-        }}
-        transition={{
-          duration: .5,
-        }}
+        <article
         className='flex flex-col justify-center mr-6'> 
-          <h1
+          <motion.h1
+          initial={{
+            y: -500,
+            opacity:0
+          }}
+          animate={{
+            y:0,
+            opacity:1
+          }}
+          transition={{
+            duration: 1,
+            type: 'spring'
+          }}
           className='text-2xl md:text-3xl font-medium text-white mb-2'>
           Hola!, soy  <span className='text-violet-500'>Benjamin </span>
-          </h1>
-          <p 
+          </motion.h1>
+          <motion.p 
+          initial={{
+            x: -500,
+            opacity:0
+          }}
+          animate={{
+          x:0,
+           opacity:1
+          }}
+          transition={{
+            duration: 1,
+            type: 'spring'
+          }}
           className='text-2xl md:text-5xl text-white font-bold pt-2'>
              <TypeAnimation
              sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web', 600
             ]}
             speed={300}>
             </TypeAnimation>
-              </p><br />
+              </motion.p><br />
 
-          <p 
+          <motion.p 
+          initial={{
+            y: 500,
+            opacity:0
+          }}
+          animate={{
+          y:0,
+           opacity:1
+          }}
+          transition={{
+            duration: 1,
+            type: 'spring'
+          }}
           className='text-[1rem] text-white mt-4'>
             Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento. <br />
-          </p>
-          <article
+          </motion.p>
+          <motion.article
+          initial={{
+            x: -500,
+            opacity:0
+          }}
+          animate={{
+          x:0,
+           opacity:1
+          }}
+          transition={{
+            duration: 1,
+            type: 'spring'
+          }}
             className='flex mt-6 mb-4'>
               <ul>
                  {links.map(({id, href, download}) => (
@@ -66,8 +105,8 @@ const HomePage = () => {
                 </li>
               ))}
               </ul>   
-            </article>
-        </motion.article>
+            </motion.article>
+        </article>
         <motion.article
         initial={{
           scale:0

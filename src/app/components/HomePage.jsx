@@ -1,17 +1,9 @@
 "use client"
-import { useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import { LuFileSpreadsheet } from "react-icons/lu";
-import Aos from "aos";
-import ParticlesBackgraund from './ParticlesBackgraund'
 
 const HomePage = () => {
-
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   const links = [
     {
       id:1,
@@ -28,11 +20,9 @@ const HomePage = () => {
   return (
     <main
       id='Perfil' 
-      className='w-full h-screen'
-    >
-          <ParticlesBackgraund />
-             
-             
+      
+      className='w-full h-screen '
+    >        
              <section className=' max-w-screen-lg mx-auto pt-[10rem] tlc:pt-[3rem]
                            flex flex-col items-center h-full md:px-4 px-10 justify-center
                            md:flex-row md:justify-center'>

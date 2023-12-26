@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en" >
+      <html lang="en" className=" bg-stone-950" >
       <body className={roboto_condensed.className}>
         <Header/>
         <HomePage />

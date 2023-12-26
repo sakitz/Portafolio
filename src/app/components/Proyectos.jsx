@@ -25,7 +25,9 @@ import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPrisma } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
+
 const Proyectos = () => {
+
   useEffect(() => {
     Aos.init()
   } ,[])

@@ -56,7 +56,7 @@ const Footer = () => {
   };
 
   return (
-    <section className="w-full h-screen 2xl:mb-10" data-aos="flip-left">
+    <section className=" w-full h-screen 2xl:mb-10" data-aos="flip-left">
     <article className="text-gray-400 body-font max-w-screen-lg mx-auto h-screen px-10 md:px-0 tlmc:pt-[45rem] tlc:pt-[30rem] md:pt-[5rem] 2xl:pt-[10rem]">
       <header className="flex flex-col text-center w-full mb-8">
         <h1 id="Contacto" className="text-transparent text-9xl font-normal text-center">

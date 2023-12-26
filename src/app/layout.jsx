@@ -6,6 +6,7 @@ import Experiencias from './components/Experiencias';
 import Proyectos from './components/Proyectos';
 import Aboutme from './components/Aboutme';
 import Footer from './components/Contacto';
+
 const roboto_condensed = Roboto_Condensed({ 
   subsets: ['latin'],
 })
@@ -17,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en" className=" bg-stone-950" >
+      <html lang="en" className=" bg-[#050517] cursor-fancy"  >
       <body className={roboto_condensed.className}>
         <Header/>
         <HomePage />
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
         <Proyectos />
         <Aboutme />
         <Footer />
-        {children}
+        {children}      
       </body>
     </html>    
   )

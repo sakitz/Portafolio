@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ParticlesBackgraund from './ParticlesBackgraund'
 import { LuFileSpreadsheet } from "react-icons/lu";
 import Aos from "aos";
-import { Fade } from 'react-reveal'
+
 
 const HomePage = () => {
 
@@ -29,16 +29,15 @@ const HomePage = () => {
   return (
     <main
       id='Perfil' 
-      className='w-full h-screen '
+      className='w-full h-screen bg-black'
     >
-      <Fade right cascade>
              <ParticlesBackgraund />
              
              <section className=' max-w-screen-lg mx-auto pt-[10rem] tlc:pt-[3rem]
                            flex flex-col items-center h-full md:px-4 px-10 justify-center
                            md:flex-row md:justify-center'>
               
-        <article 
+        <article data-aos="fade-right"
         className='flex flex-col justify-center mr-6 animate-'> 
           <h1 className='text-2xl md:text-3xl font-medium text-white mb-2'>
           Hola!, soy  <span className='text-violet-700'>Benjamin </span>
@@ -72,7 +71,7 @@ const HomePage = () => {
               </ul>   
             </article>
         </article>
-        <article>
+        <article data-aos="fade-left">
             <Image 
               src='/giphy2.webp'
               width={500}
@@ -90,7 +89,6 @@ const HomePage = () => {
             />
           </article>  
         </section>
-        </Fade>
     </main>
   )
 }

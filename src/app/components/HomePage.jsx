@@ -43,7 +43,7 @@ const HomePage = () => {
           <p 
           className='text-2xl md:text-5xl text-white font-bold pt-2'>
               <TypeAnimation
-             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web',600,'FronEnd',600,'Desarrollador Web',600,'Desarrollador Web', 600
+             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web', 600
             ]}
             speed={300}  
             >

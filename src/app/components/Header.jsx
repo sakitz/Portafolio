@@ -32,27 +32,14 @@ const Header = () => {
     {
       id:5,
       link: '#Contacto',
-      name:'Contacto' 
-    },
+      name:'Contacto'
+},
 
 ]
 
-
   return (
-       <motion.header
-       initial={{
-        opacity: 0,
-        scale: 0,
-        x: 5000
-      }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-        x: 0
-      }}
-      transition={{
-        duration: .8,
-      }}
+       <header
+       
        id='home'
        className='w-full h-fit bg-[#05051b] fixed z-50'
        >
@@ -61,22 +48,51 @@ const Header = () => {
           href='#home'
           className='text-xl md:text-2xl xl:text-4xl md:hover:text-[2.75rem] font-bold transition-all'
         >
-          <h1 className=' font-Logo'>
+          <motion.h1 
+            initial={{
+              opacity: 0,
+              scale: 0,
+              x: -500
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              x: 0
+            }}
+            transition={{
+              duration: .8,
+            }}
+            className=' font-Logo'>
             Benjamin L.
-          </h1>  
+          </motion.h1>  
         </Link>
 
           
+          
           <ul className='hidden md:flex'>
               {Links.map(({link, name, id}) => (
-                <li
+                <motion.li
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  x: 500
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  x: 0
+                }}
+                transition={{
+                  duration: .8,
+                }}
                   key={id}
                   className='text-white font-bold px-4 cursor-pointer
                   after:h-[2px] after:w-0 after:bg-violet-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'>
                     <Link href={link} duration={500}>{name}</Link>
-                </li>
+                </motion.li>
                 ))}
           </ul>
+        
           <article
             className='cursor-pointer z-10 text-white md:hidden'
             onClick={() => setNav(!nav)}
@@ -93,6 +109,7 @@ const Header = () => {
                 <li
                   key={id}
                   className='px-4 py-6 text-4xl'>
+
                   <Link onClick={() => setNav(!nav)} href={link} duration={500}>
                             <p className='text-white'>{name}</p>
                   </Link>      
@@ -100,10 +117,8 @@ const Header = () => {
               ))}
             </ul>
           )}
-        </section>
-
-       
-       </motion.header>
+        </section>       
+    </header>
   )
 }
 

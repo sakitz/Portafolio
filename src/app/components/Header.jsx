@@ -70,7 +70,7 @@ const Header = () => {
           
           
           <ul className='hidden md:flex'>
-              {Links.map(({link, id}) => (
+              {Links.map(({link, name , id}) => (
                 <motion.li
                 initial={{
                   scale: 0,

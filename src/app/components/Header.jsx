@@ -12,27 +12,27 @@ const Header = () => {
     {
         id:1,
         link:'#Perfil',
-        name:'Perfil'
+        name: 'Perfil'
     },
     {
         id:2,
         link:'#Tecnologias',
-        name:'Tecnologias'
+        name: 'Tecnologias'
     },
     {
         id:3,
         link:'#Proyectos',
-        name:'Proyectos'
+        name: 'Proyectos'
     }, 
     {
         id:4,
         link: '#Sobre mi',
-        name:'Sobre mi' 
+        name: 'Sobre mi'
     },
     {
       id:5,
       link: '#Contacto',
-      name:'Contacto'
+      name: 'Contacto'
 },
 
 ]
@@ -46,7 +46,7 @@ const Header = () => {
         <section className=' text-white flex justify-between items-center p-8'>
         <Link
           href='#home'
-          className='text-xl md:text-2xl xl:text-4xl md:hover:text-[2.75rem] font-bold transition-all'
+          className='link'
         >
           <motion.h1 
             initial={{
@@ -60,7 +60,7 @@ const Header = () => {
               x: 0
             }}
             transition={{
-              duration: .8,
+              duration: .5,
             }}
             className=' font-Logo'>
             Benjamin L.
@@ -70,24 +70,19 @@ const Header = () => {
           
           
           <ul className='hidden md:flex'>
-              {Links.map(({link, name, id}) => (
+              {Links.map(({link, id}) => (
                 <motion.li
                 initial={{
-                  opacity: 0,
                   scale: 0,
-                  x: 500
                 }}
                 animate={{
-                  opacity: 1,
                   scale: 1,
-                  x: 0
                 }}
                 transition={{
-                  duration: .8,
+                  duration: .2,
                 }}
                   key={id}
-                  className='text-white font-bold px-4 cursor-pointer
-                  after:h-[2px] after:w-0 after:bg-violet-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] border-green-600 ease-in'>
+                  className='lineborder'>
                     <Link href={link} duration={500}>{name}</Link>
                 </motion.li>
                 ))}
@@ -102,9 +97,7 @@ const Header = () => {
 
           {nav && (
             <ul
-            className='flex flex-col absolute justify-center 
-            items-center top-0 left-0 w-full h-screen bg-gradient-to-b 
-          from-blue-800 to-black text-white'>
+            className='nav'>
               {Links.map(({link, name, id})  => (
                 <li
                   key={id}

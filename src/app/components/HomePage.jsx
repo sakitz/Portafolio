@@ -26,14 +26,12 @@ const HomePage = () => {
         <motion.article
         initial={{
           scale: 0,
-          x: 500
         }}
         animate={{
           scale: 1,
-          x: 0
         }}
         transition={{
-          duration: .8,
+          duration: .5,
         }}
         className='flex flex-col justify-center mr-6'> 
           <h1
@@ -74,15 +72,13 @@ const HomePage = () => {
         </motion.article>
         <motion.article
         initial={{
-          scale: 0,
-          x: 500
+          scale:0
         }}
         animate={{
-          scale: 1,
-          x: 0
+          scale:1
         }}
         transition={{
-          duration: .5,
+          duration: .2,
         }}
         >
             <Image 

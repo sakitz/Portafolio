@@ -7,3 +7,24 @@
     src: url('./fonts/Silkscreen-Bold.ttf');
     font-display: swap;
 }
+
+@layer  components{
+    .lineborder {
+        @apply text-white font-bold px-4 cursor-pointer
+        after:h-[2px] after:w-0 after:bg-violet-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] ease-in
+    }
+}
+
+@layer components {
+    .nav {
+        @apply flex flex-col absolute justify-center 
+        items-center top-0 left-0 w-full h-screen bg-gradient-to-b 
+      from-blue-800 to-black text-white
+    }
+}
+
+@layer components {
+    .link {
+        @apply text-xl md:text-2xl xl:text-4xl md:hover:text-[2.75rem] font-bold transition-all
+    }
+}

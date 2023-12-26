@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 const HomePage = () => {
   const links = [
@@ -39,13 +40,16 @@ const HomePage = () => {
           </h1>
           <p 
           className='text-2xl md:text-5xl text-white font-bold pt-2'>
-              Desarrollador Web fronEnd<span className='animate-pulse text-violet-600'>|</span> 
+             <TypeAnimation
+             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web', 600
+            ]}
+            speed={300}>
+            </TypeAnimation>
               </p><br />
 
           <p 
           className='text-[1rem] text-white mt-4'>
             Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento. <br />
-            
           </p>
           <article
             className='flex mt-6 mb-4'>

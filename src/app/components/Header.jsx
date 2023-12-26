@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
-
+import { motion } from 'framer-motion'
 
 const Header = () => {
 
@@ -39,7 +39,20 @@ const Header = () => {
 
 
   return (
-       <header
+       <motion.header
+       initial={{
+        opacity: 0,
+        scale: 0,
+        x: 1000
+      }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        x: 0
+      }}
+      transition={{
+        duration: .8,
+      }}
        id='home'
        className='w-full h-fit bg-[#0b0b0b] fixed z-50'
        >
@@ -90,7 +103,7 @@ const Header = () => {
         </section>
 
        
-       </header>
+       </motion.header>
   )
 }
 

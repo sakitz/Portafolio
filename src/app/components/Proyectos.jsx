@@ -31,6 +31,7 @@ const Proyectos = () => {
   useEffect(() => {
     Aos.init()
   } ,[])
+  
   return (
       <section className="w-full h-screen tlmc:pt-[85rem] tlc:pt-[75rem] md:pt-[15rem] lg:pt-[40rem] xl:pt-[20rem]"> 
                <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>

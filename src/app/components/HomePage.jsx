@@ -1,5 +1,4 @@
 "use client"
-import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { motion } from 'framer-motion';
@@ -40,12 +39,7 @@ const HomePage = () => {
           </h1>
           <p 
           className='text-2xl md:text-5xl text-white font-bold pt-2'>
-              <TypeAnimation
-             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web', 600
-            ]}
-            speed={300}  
-            >
-            </TypeAnimation>
+              Desarrollador Web fronEnd<span className='animate-pulse text-violet-600'>|</span> 
               </p><br />
 
           <p 

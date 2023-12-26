@@ -195,7 +195,7 @@ const Proyectos = () => {
                   height={500}
                   src={reactexpense}
                   alt="imagen de una expensa con grafico de pie"
-                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -248,7 +248,7 @@ const Proyectos = () => {
                   height={500}
                   src={user}
                   alt="imagen de usuarios"
-                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 
@@ -298,7 +298,7 @@ const Proyectos = () => {
                   height={500}
                   src={CRUD}
                   alt="notas CRUD"
-                  className="tlmc:w-[180px] tlmc:h-[170px] md:w-[230px] mx-auto my-auto md:h-[190px] rounded-md hover:scale-105 transition-all"
+                  className="md:w-[230px] mx-auto my-auto h-[190px] rounded-md hover:scale-105 transition-all"
                 />
               </article>
 

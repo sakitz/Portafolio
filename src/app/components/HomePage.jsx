@@ -8,11 +8,6 @@ const HomePage = () => {
   const links = [
     {
       id:1,
-      child: (
-        <>
-        CV <LuFileSpreadsheet size={30}/>
-       </> 
-    ),
       href: '../../../CV/benjamin-L.pdf',
       download: true,
   },
@@ -22,7 +17,7 @@ const HomePage = () => {
     <main
       id='Perfil' 
       
-      className='w-full h-screen '
+      className='w-full h-screen'
     >      
              <section className=' max-w-screen-lg mx-auto pt-[10rem] tlc:pt-[3rem]
                            flex flex-col items-center h-full md:px-4 px-10 justify-center
@@ -63,7 +58,7 @@ const HomePage = () => {
           <article
             className='flex mt-6 mb-4'>
               <ul>
-                 {links.map(({id, child, href, download}) => (
+                 {links.map(({id, href, download}) => (
                 <li key={id} className='flex gap-x-4 text-xl justify-center items-center px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-md xl:hover:bg-violet-800 transition-all'>
                     <a 
                       href={href} 
@@ -71,7 +66,7 @@ const HomePage = () => {
                       target='_blank'
                       rel='noreferrer'
                       className='flex gap-2'
-                      >{child}</a>
+                      >CV <LuFileSpreadsheet size={30}/></a>
                 </li>
               ))}
               </ul>   

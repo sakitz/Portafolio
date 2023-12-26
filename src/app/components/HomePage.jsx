@@ -23,74 +23,38 @@ const HomePage = () => {
                            flex flex-col items-center h-full md:px-4 px-10 justify-center
                            md:flex-row md:justify-center'>
               
-        <article
+        <motion.article
+        initial={{
+          x: -500,
+          opacity:0
+        }}
+        animate={{
+        x:0,
+         opacity:1
+        }}
+        transition={{
+          duration: 1,
+          type: 'spring'
+        }}
         className='flex flex-col justify-center mr-6'> 
-          <motion.h1
-          initial={{
-            y: -500,
-            opacity:0
-          }}
-          animate={{
-            y:0,
-            opacity:1
-          }}
-          transition={{
-            duration: 1,
-            type: 'spring'
-          }}
-          className='text-2xl md:text-3xl font-medium text-white mb-2'>
+          <h1  
+            className='text-2xl md:text-3xl font-medium text-white mb-2'>
           Hola!, soy  <span className='text-violet-500'>Benjamin </span>
-          </motion.h1>
-          <motion.p 
-          initial={{
-            x: -500,
-            opacity:0
-          }}
-          animate={{
-          x:0,
-           opacity:1
-          }}
-          transition={{
-            duration: 1,
-            type: 'spring'
-          }}
+          </h1>
+          <p 
           className='text-2xl md:text-5xl text-white font-bold pt-2'>
              <TypeAnimation
              sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web', 600
             ]}
             speed={300}>
             </TypeAnimation>
-              </motion.p><br />
+              </p><br />
 
-          <motion.p 
-          initial={{
-            y: 500,
-            opacity:0
-          }}
-          animate={{
-          y:0,
-           opacity:1
-          }}
-          transition={{
-            duration: 1,
-            type: 'spring'
-          }}
-          className='text-[1rem] text-white mt-4'>
+          <p className='text-[1rem] text-white mt-4'>
             Y estoy comprometido a crear webs con un código legible, escalable y con el mejor rendimiento. <br />
-          </motion.p>
-          <motion.article
-          initial={{
-            x: -500,
-            opacity:0
-          }}
-          animate={{
-          x:0,
-           opacity:1
-          }}
-          transition={{
-            duration: 1,
-            type: 'spring'
-          }}
+          </p>
+          <article
+          
             className='flex mt-6 mb-4'>
               <ul>
                  {links.map(({id, href, download}) => (
@@ -105,8 +69,8 @@ const HomePage = () => {
                 </li>
               ))}
               </ul>   
-            </motion.article>
-        </article>
+            </article>
+        </motion.article>
         <motion.article
         initial={{
           scale:0

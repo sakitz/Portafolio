@@ -7,6 +7,7 @@ import { FaDatabase } from "react-icons/fa";
 import Aos from "aos";
 
 const Experiencias = () => {
+  
   useEffect(() => {
     Aos.init()
   } ,[])

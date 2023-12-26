@@ -36,7 +36,7 @@ const Footer = () => {
             timer: 1500,
           });
         })
-        .catch((error) => {
+        .catch(() => {
           Swal.fire({
             icon: 'error',
             title: 'Error',
@@ -50,10 +50,6 @@ const Footer = () => {
         text: 'Por favor, completa todos los campos del formulario.',
       });
     }
-  };
-  
-  const handleClick = () => {
-    sendEmail();
   };
 
   return (
@@ -81,7 +77,7 @@ const Footer = () => {
                 id="name"
                 name="user_name"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 border-white focus:bg-gray-200 focus:border-violet-500 focus:ring-violet-600 rounded border text-white focus:text-black transition-colors duration-200 ease-in-out  focus:ring-2 text-base outline-none py-1 px-3 leading-8"
+                className="inputs"
               />
             </label>
           </div>
@@ -93,7 +89,7 @@ const Footer = () => {
                 id="email"
                 name="user_email"
                 required
-                className="w-full text-white bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-500 focus:ring-violet-600 focus:bg-gray-200 focus:ring-2 text-base outline-none focus:text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="inputs"
               />
             </label>
           </div>
@@ -104,14 +100,14 @@ const Footer = () => {
                 id="message"
                 name="message"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-500 focus:ring-violet-600 focus:bg-gray-200 focus:ring-2 h-32 text-base outline-none focus:text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="inputs"
               ></textarea>
             </label>
           </div>
         </div>
   
         <button
-          onClick={handleClick}
+          onClick={sendEmail}
           type="submit"
           value="Enviar"
           className="flex mx-auto text-white bg-transparent border-2 border-white transition-all py-2 px-8 focus:outline-none hover:bg-violet-700 rounded text-lg"

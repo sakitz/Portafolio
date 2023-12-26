@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en" className=" bg-[#050517] cursor-fancy"  >
+      <html lang="en" className=" bg-[#06061d]"  >
       <body className={roboto_condensed.className}>
         <Header/>
         <HomePage />

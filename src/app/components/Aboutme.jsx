@@ -57,7 +57,7 @@ const Aboutme = () => {
             <Image src='/horario.webp' width={10000} height={1000} alt="gif de horario retro" className="hidden md:inline-block col-span-2 w-full h-36 rounded-md border-2 border-violet-700" />
             <Image src="/retro-unscreen.webp" width={1000} height={1000} alt="imagen de personaje retro" className="border border-violet-700 bg-blue-950 rounded-md w-full h-40 tlmc:hidden md:inline-block"/>
             <p className="tlmc:col-span-2 md:col-span-1 text-white font-bold font-Logo text-3xl rounded-md bg-gradient-to-br from-violet-700 via-violet-800 to-violet-950 w-full h-40 grid place-content-center border-2 border-violet-700 ">{loading ? ( <span>Cargando...</span> ) : ( <span> {currentHour}<span className="animate-pulse">.</span></span>)}</p>
-            <p className="col-span-2 w-fit h-fit text-violet-600 text-xl place-content-center"> Si te ha gustado mi perfil, podrías contactarme en la siguiente sección.</p>
+            <p className="col-span-2 w-fit h-fit text-violet-500 text-xl place-content-center"> Si te ha gustado mi perfil, podrías contactarme en la siguiente sección.</p>
           </section>
 
         </article>

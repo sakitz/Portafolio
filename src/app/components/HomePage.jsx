@@ -31,7 +31,7 @@ const HomePage = () => {
         <motion.article
         initial={{
           scale: 0,
-          x: -1000
+          x: 500
         }}
         animate={{
           scale: 1,
@@ -80,7 +80,7 @@ const HomePage = () => {
         <motion.article
         initial={{
           scale: 0,
-          x: 1000
+          x: 500
         }}
         animate={{
           scale: 1,
@@ -98,7 +98,7 @@ const HomePage = () => {
               className='rounded-2xl 
                tlmc:hidden
                xl:block
-              sm:max-w-md 
+                sm:max-w-md 
               sm:mt-8
               overflow-hidden
               md:w-[300px] lg:w-[30rem]

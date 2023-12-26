@@ -65,7 +65,7 @@ const Footer = () => {
         <h2 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-white">
           Contactame
         </h2>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-violet-600 text-base">
+        <p className="lg:w-2/3 mx-auto leading-relaxed text-violet-500 text-base">
           Puedes contactarme mediante este formulario o más abajo están mis redes / Email.
         </p>
       </header>
@@ -80,7 +80,7 @@ const Footer = () => {
                 id="name"
                 name="user_name"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 border-white focus:bg-gray-800 focus:border-violet-600 focus:ring-violet-900 rounded border text-gray-800 transition-colors duration-200 ease-in-out  focus:ring-2 text-base outline-none py-1 px-3 leading-8"
+                className="w-full bg-gray-800 bg-opacity-40 border-white focus:bg-gray-200 focus:border-violet-500 focus:ring-violet-600 rounded border text-white focus:text-black transition-colors duration-200 ease-in-out  focus:ring-2 text-base outline-none py-1 px-3 leading-8"
               />
             </label>
           </div>
@@ -92,7 +92,7 @@ const Footer = () => {
                 id="email"
                 name="user_email"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-800 focus:ring-2 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full text-white bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-500 focus:ring-violet-600 focus:bg-gray-200 focus:ring-2 text-base outline-none focus:text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </label>
           </div>
@@ -103,7 +103,7 @@ const Footer = () => {
                 id="message"
                 name="message"
                 required
-                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-600 focus:ring-violet-900 focus:bg-gray-800 focus:ring-2 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-500 focus:ring-violet-600 focus:bg-gray-200 focus:ring-2 h-32 text-base outline-none focus:text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </label>
           </div>
@@ -119,7 +119,7 @@ const Footer = () => {
         </button>
   
         <div className="pt-8 mt-8 border-t border-gray-800 text-center">
-          <p className="text-violet-600">benjaminlopezmia@gmail.com</p>
+          <p className="text-violet-500">benjaminlopezmia@gmail.com</p>
           <p className="leading-normal text-white my-5">
             San Miguel de Tucumán, Argentina
           </p>

@@ -43,7 +43,7 @@ const Header = () => {
        initial={{
         opacity: 0,
         scale: 0,
-        x: 1000
+        x: 5000
       }}
       animate={{
         opacity: 1,
@@ -54,7 +54,7 @@ const Header = () => {
         duration: .8,
       }}
        id='home'
-       className='w-full h-fit bg-[#0b0b0b] fixed z-50'
+       className='w-full h-fit bg-[#05051b] fixed z-50'
        >
         <section className=' text-white flex justify-between items-center p-8'>
         <Link

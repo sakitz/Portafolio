@@ -21,11 +21,11 @@ export default function RootLayout({ children }) {
       <html lang="es" className=" bg-[#06061d]"  >
       <body className={roboto_condensed.className}>
         <Header/>
-        <HomePage />
+         <HomePage /> 
         <Experiencias/>
         <Proyectos />
         <Aboutme />
-        <Footer />
+        {/* <Footer /> */}
         {children}      
       </body>
     </html>    

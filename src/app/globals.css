@@ -7,6 +7,9 @@
     src: url('./fonts/Silkscreen-Bold.ttf');
     font-display: swap;
 }
+/* * {
+    border: 2px solid red;
+} */
 
 @layer  components{
     .lineborder {
@@ -25,7 +28,7 @@
 
 @layer components {
     .link {
-        @apply text-xl md:text-2xl xl:text-4xl md:hover:text-[2.50rem] font-bold transition-all
+        @apply text-xl md:text-2xl xl:text-3xl md:hover:text-[2rem] font-bold transition-all
     }
 }
 

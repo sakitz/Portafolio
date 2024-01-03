@@ -207,9 +207,9 @@ const Experiencias = () => {
     <article  className="mb-6 flex flex-col justify-center max-w-screen-lg mx-auto px-10">
       <article>
         <h1 className="text-white text-5xl mb-2 text-center font-bold pb-[1rem] pt-[5rem]">Tecnologias</h1>
-        <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6  transition-all flex ">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
+        <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6  transition-all flex justify-center items-center">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
         <article
-        className="flex flex-wrap tlmc:justify-between lg:justify-start lg:gap-16 xl:gap-4">
+        className="flex flex-wrap tlmc:justify-between md:justify-center lg:gap-16 xl:gap-4">
           {fronted.map(({ id,child ,title }) => (
             <div
             key={id} className="text-white mb-6" data-aos="fade-left">
@@ -223,8 +223,8 @@ const Experiencias = () => {
       </article>
  
      <article className="mt-4">
-      <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-green-700 mb-6  transition-all flex ">B<p className="text-white">ack</p>E<p className="text-white">nd</p> <MdOutlineTerminal  className="ml-4 hover:animate-bounce mt-2" /></h1>
-        <article className="flex flex-wrap text-center tlmc:justify-between md:justify-start md:gap-16">
+      <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-green-700 mb-6  transition-all flex justify-center items-center">B<p className="text-white">ack</p>E<p className="text-white">nd</p> <MdOutlineTerminal  className="ml-4 hover:animate-bounce mt-2" /></h1>
+        <article className="flex flex-wrap text-center tlmc:justify-between md:justify-center lg:gap-16">
           {backend.map(({ id, child, title }) => (
             <div key={id} className='text-white mb-6' data-aos="fade-left">
               <div>
@@ -237,8 +237,8 @@ const Experiencias = () => {
       </article>
 
       <article data-aos = 'fade-right'>
-      <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">H<p className="text-white">erramientas</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
-        <article className="flex flex-wrap tlmc:justify-between md:justify-start md:gap-12">
+      <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex justify-center items-center">H<p className="text-white">erramientas</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
+        <article className="flex flex-wrap tlmc:justify-between md:justify-center md:gap-12">
           {Tools.map(({ id, child, title }) => (
             <div key={id} className="text-white mb-6" data-aos="fade-left">
              <div>

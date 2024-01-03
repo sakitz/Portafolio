@@ -39,9 +39,9 @@ const Header = () => {
 
   return (
        <header
-       className='w-full h-fit bg-[#05051b] fixed z-50'
+       className='w-[100%] h-fit bg-[#05051b] z-50'
        >
-        <section className=' text-white flex justify-between items-center p-8'>
+        <section className='text-white flex justify-between items-center p-8'>
           <motion.h1 
             initial={{
               opacity: 0,
@@ -96,7 +96,7 @@ const Header = () => {
                   key={id}
                   className='px-4 py-6 text-4xl'>
 
-                  <Link onClick={() => setNav(!nav)} href={link} duration={500}>
+                  <Link to={link} href={link} spy={true} smooth={true} offset={50} duration={500} onClick={() => setNav(!nav)}>
                             <p className='text-white'>{name}</p>
                   </Link>      
                 </li>

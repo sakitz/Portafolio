@@ -16,10 +16,10 @@ const HomePage = () => {
   return (
     <main 
     id='Perfil'
-      className='w-full h-screen'
+      className='w-[100%] h-screen'
     >      
-             <section className=' max-w-screen-lg mx-auto pt-[10rem] tlc:pt-[3rem]
-                           flex flex-col items-center h-full md:px-4 px-10 justify-center
+             <section className='max-w-screen-lg mx-auto pt-[10rem] tlc:pt-[3rem]
+                           flex flex-col items-center h-full md:px-4 justify-center
                            md:flex-row md:justify-center'>
               
         <motion.article

@@ -39,7 +39,7 @@ const Proyectos = () => {
       <h2 className="text-white text-5xl font-bold mb-10 text-center pt-[5rem]" >Proyectos</h2>
         <article className="grid place-content-center gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
         <div className="grid place-content-center justify-between rounded-lg" data-aos="fade-left">
-            <div className="relative flex max-w-lg p-2  bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
+            <div className="relative flex max-w-lg p-2  bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
                   width={250}
@@ -50,9 +50,9 @@ const Proyectos = () => {
                 />
               </article>
 
-              <article className="flex flex-col gap-2 my-auto mx-auto pb-12 text-center">
+              <article className="flex flex-col gap-2 my-center pb-12 mx-auto text-center">
                 <h1 className="text-xl font-bold lg:text-2xl text-white ">
-                  <span className="mx-auto p-2 text-center">Tetris</span>
+                  <span className="mx-auto text-center p-2">Tetris</span>
                 </h1>
 
                 <ul className="flex flex-wrap gap-2 rounded-md text-white">
@@ -71,25 +71,25 @@ const Proyectos = () => {
                 <Link
                   href="https://github.com/sakitz/Tetris"
                   target="_blank"
-                  className="hover:scale-105 transition-all"
+                  className="hover:scale-105 transition-all pt-10"
                   alt="link para ir al repositorio del proyecto"
                 >
-                   <FaGithub className="text-white mr-4" size={30} /> <span>Code</span>
+                   <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://tetris-one-peach.vercel.app/"
                   target="_blank"
-                  className="hover:scale-105 transition-all right-6"
+                  className="hover:scale-105 transition-all pt-10"
                   alt="link para ir a la web del proyecto"
                 >
-                   <MdOutlineComputer className="text-white " size={30} /> <span>Web</span>
+                   <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
           </div>
           <div className="grid place-content-center justify-between rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2 bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
-              <article className="overflow-hidden w-[250px] h-[200px] ">
+              <article className="overflow-hidden w-[250px] h-[200px]">
                 <Image
                   width={230}
                   height={190}
@@ -123,7 +123,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /><span>Code</span>
+                  <FaGithub className="text-white mr-4" size={25} /><span>Code</span>
                 </Link>
                 <Link
                   href="https://e-commerce-js-opal.vercel.app/"
@@ -131,7 +131,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span>Web</span>
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -173,7 +173,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span>Code</span>
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://tic-tac-toe-wheat-nine.vercel.app/"
@@ -181,7 +181,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span>Web</span>
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -226,7 +226,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span>Code</span>
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://react-expense-tau.vercel.app/"
@@ -234,7 +234,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span>Web</span>
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -276,7 +276,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span>Code</span>
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://nextjs-api-users.vercel.app/"
@@ -284,7 +284,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span>Web</span>
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>
@@ -329,7 +329,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span>Code</span>
+                  <FaGithub className="text-white mr-4" size={25} /> <span>Code</span>
                 </Link>
                 <Link
                   href="https://nextjs-prisma-crud-six-gules.vercel.app/"
@@ -337,7 +337,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span>Web</span>
+                  <MdOutlineComputer className="text-white " size={25} /> <span>Web</span>
                 </Link>
               </article>
             </div>

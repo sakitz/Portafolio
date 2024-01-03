@@ -22,7 +22,7 @@ const Aboutme = () => {
         setCurrentHour(formattedHour);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching data:', error.message);
+        return error
       }
     };
 

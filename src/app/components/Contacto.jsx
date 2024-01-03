@@ -62,7 +62,7 @@ const Footer = () => {
         <h2 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-white">
           Contactame
         </h2>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-violet-500 text-base">
+        <p className="lg:w-2/3 mx-auto leading-relaxed text-blue-500 text-base">
           Puedes contactarme mediante este formulario o más abajo están mis redes / Email.
         </p>
       </header>
@@ -116,7 +116,7 @@ const Footer = () => {
         </button>
   
         <div className="pt-8 mt-8 border-t border-gray-800 text-center">
-          <p className="text-violet-500">benjaminlopezmia@gmail.com</p>
+          <p className="text-blue-500">benjaminlopezmia@gmail.com</p>
           <p className="leading-normal text-white my-5">
             San Miguel de Tucumán, Argentina
           </p>

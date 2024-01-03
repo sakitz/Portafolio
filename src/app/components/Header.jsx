@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 
 const Header = () => {
@@ -11,27 +11,27 @@ const Header = () => {
   const Links = [
     {
         id:1,
-        link:'#Perfil',
-        name: 'Perfil'
+        link:'Perfil',
+        name: 'Inicio'
     },
     {
         id:2,
-        link:'#Tecnologias',
+        link:'Tecnologias',
         name: 'Tecnologias'
     },
     {
         id:3,
-        link:'#Proyectos',
+        link:'Proyectos',
         name: 'Proyectos'
     }, 
     {
         id:4,
-        link: '#Sobre mi',
+        link: 'Sobre mi',
         name: 'Sobre mi'
     },
     {
       id:5,
-      link: '#Contacto',
+      link: 'Contacto',
       name: 'Contacto'
 },
 
@@ -39,15 +39,9 @@ const Header = () => {
 
   return (
        <header
-       
-       id='home'
        className='w-full h-fit bg-[#05051b] fixed z-50'
        >
         <section className=' text-white flex justify-between items-center p-8'>
-        <Link
-          href='#home'
-          className='link'
-        >
           <motion.h1 
             initial={{
               opacity: 0,
@@ -62,10 +56,9 @@ const Header = () => {
             transition={{
               duration: .5,
             }}
-            className=' font-Logo'>
+            className='font-Logo link'>
             Benjamin L.
           </motion.h1>  
-        </Link>
 
           
           
@@ -83,7 +76,7 @@ const Header = () => {
                 }}
                   key={id}
                   className='lineborder'>
-                    <Link href={link} duration={500}>{name}</Link>
+                    <Link to={link} spy={true} smooth={true} offset={50} duration={500}>{name}</Link>
                 </motion.li>
                 ))}
           </ul>

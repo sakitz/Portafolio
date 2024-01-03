@@ -14,9 +14,8 @@ const HomePage = () => {
 ]
 
   return (
-    <main
-      id='Perfil' 
-      
+    <main 
+    id='Perfil'
       className='w-full h-screen'
     >      
              <section className=' max-w-screen-lg mx-auto pt-[10rem] tlc:pt-[3rem]
@@ -39,12 +38,12 @@ const HomePage = () => {
         className='flex flex-col justify-center mr-6'> 
           <h1  
             className='text-2xl md:text-3xl font-medium text-white mb-2'>
-          Hola!, soy  <span className='text-violet-500'>Benjamin </span>
+          Hola!, soy  <span className='text-blue-500'>Benjamin </span>
           </h1>
           <p 
           className='text-2xl md:text-5xl text-white font-bold pt-2'>
              <TypeAnimation
-             sequence={['Desarrollador Web', 600,'FronEnd',600,'Desarrollador Web', 600
+             sequence={['Desarrollador Web', 600,'FullStack',600,'Desarrollador Web FullStack.', 600
             ]}
             speed={300}>
             </TypeAnimation>

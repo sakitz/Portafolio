@@ -33,12 +33,12 @@ const Proyectos = () => {
   } ,[])
   
   return (
-      <section className="w-full h-screen tlmc:pt-[85rem] tlc:pt-[75rem] md:pt-[15rem] lg:pt-[40rem] xl:pt-[20rem]"> 
+      <section className="w-full h-screen tlmc:pt-[85rem] tlc:pt-[75rem] md:pt-[15rem] lg:pt-[40rem] xl:pt-[5rem]"> 
                <h2 className="text-transparent text-6xl font-bold mb-10 text-center" id="Proyectos">Proyectos</h2>
       <section className="flex flex-col justify-center max-w-screen-lg mx-auto px-10" >
-      <h2 className="text-white text-5xl font-bold mb-10 text-center">Proyectos</h2>
+      <h2 className="text-white text-5xl font-bold mb-10 text-center pt-[5rem]" >Proyectos</h2>
         <article className="grid place-content-center gap-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="grid place-content-center justify-between rounded-lg" data-aos = 'flip-down'>
+        <div className="grid place-content-center justify-between rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2  bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -87,7 +87,7 @@ const Proyectos = () => {
               </article>
             </div>
           </div>
-          <div className="grid place-content-center justify-between rounded-lg"  data-aos = 'flip-down'>
+          <div className="grid place-content-center justify-between rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2 bg-blue-950 border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -137,7 +137,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg"  data-aos = 'flip-right'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -187,7 +187,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'flip-left'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -240,7 +240,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'flip-up'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image
@@ -290,7 +290,7 @@ const Proyectos = () => {
             </div>
           </div>
 
-          <div className="grid place-content-center justify-between   rounded-lg" data-aos = 'flip-down'>
+          <div className="grid place-content-center justify-between   rounded-lg" data-aos="fade-left">
             <div className="relative flex max-w-lg p-2 bg-blue-950  border-2 border-blue-800 overflow-hidden rounded-lg flex-col">
               <article className="overflow-hidden w-[250px] h-[200px] ">
                 <Image

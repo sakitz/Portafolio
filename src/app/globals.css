@@ -11,7 +11,7 @@
 @layer  components{
     .lineborder {
         @apply text-white font-bold px-4 cursor-pointer
-        after:h-[2px] after:w-0 after:bg-violet-700 after:block after:transition-all duration-[500ms] hover:after:w-[100%] ease-in
+        after:h-[2px] after:w-0 after:bg-blue-600 after:block after:transition-all duration-[500ms] hover:after:w-[100%] ease-in
     }
 }
 
@@ -25,12 +25,12 @@
 
 @layer components {
     .link {
-        @apply text-xl md:text-2xl xl:text-4xl md:hover:text-[2.75rem] font-bold transition-all
+        @apply text-xl md:text-2xl xl:text-4xl md:hover:text-[2.50rem] font-bold transition-all
     }
 }
 
 @layer components {
     .inputs {
-        @apply w-full bg-gray-800 bg-opacity-40 rounded border border-white focus:border-violet-500 focus:ring-violet-600 focus:bg-gray-200 focus:ring-2 h-32 text-base outline-none focus:text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out
+        @apply w-full bg-gray-950 rounded border border-gray-700 focus:border-violet-800 focus:bg-gray-900 focus:ring-2 focus:ring-violet-700 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
     }
 }

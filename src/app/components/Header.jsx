@@ -29,17 +29,12 @@ const Header = () => {
         link: 'Sobre mi',
         name: 'Sobre mi'
     },
-    {
-      id:5,
-      link: 'Contacto',
-      name: 'Contacto'
-},
 
 ]
 
   return (
        <header
-       className='w-[100%] h-fit bg-[#05051b] z-50'
+       className='w-full h-fit bg-[#05051b] fixed z-50'
        >
         <section className='text-white flex justify-between items-center p-8'>
           <motion.h1 

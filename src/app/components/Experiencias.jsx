@@ -40,7 +40,6 @@ const Experiencias = () => {
        </> 
     ),
       title: "HTML",
-      style: "hover:scale-125 transition-all"
     },
     {
       id: 2,
@@ -50,78 +49,70 @@ const Experiencias = () => {
        </> 
     ),
       title: "Css",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 2,
+      id: 3,
       child: (
         <>
         <SiTailwindcss  className=" bg-gray-800 rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Tilwindcss",
-      style: "hover:scale-125 transition-all"
     }, 
     {
-      id: 2,
+      id: 4,
       child: (
         <>
         <SiSass  className=" bg-gray-800   rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Sass",
-      style: "hover:scale-125 transition-all"
     },  
     {
-      id: 2,
+      id: 5,
       child: (
         <>
         <TbBrandFramerMotion className=" bg-gray-800 rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Framer-motion",
-      style: "hover:scale-125 transition-all"
     },
 
     {
-      id: 3,
+      id: 6,
       child: (
         <>
         <IoLogoJavascript className=" bg-gray-800 rounded-md  hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "JavaScript",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 4,
+      id: 7,
       child: (
         <>
         <BiLogoTypescript className=" bg-gray-800 rounded-md b hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "TypeScript",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 5,
+      id: 8,
       child: (
         <>
         <IoLogoReact className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "React.Js",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 6,
+      id: 9,
       child: (
         <>
         <TbBrandNextjs className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Next.js",
-      style: "hover:scale-125 transition-all"
     },
   ];
   const backend = [
@@ -133,57 +124,51 @@ const Experiencias = () => {
        </> 
     ),
       title: "Node.js",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 2,
       child: (
         <>
         <SiExpress   className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Express",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 3,
       child: (
         <>
         <BiLogoMongodb    className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "MongoDB",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 4,
       child: (
         <>
         <SiSqlite className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Sqlite",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 5,
       child: (
         <>
         <BiLogoPostgresql  className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Postgresql",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 6,
       child: (
         <>
         <SiSequelize   className=" bg-gray-800  rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Sequelize",
-      style: "hover:scale-125 transition-all"
     },
   ];
   const Tools = [
@@ -195,27 +180,24 @@ const Experiencias = () => {
        </> 
     ),
       title: "Vite",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 2,
       child: (
         <>
         <FaGitAlt className="bg-gray-800 rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Git",
-      style: "hover:scale-125 transition-all"
     },
     {
-      id: 1,
+      id: 3,
       child: (
         <>
         <BiLogoVisualStudio className=" bg-gray-800 rounded-md hover:scale-125 transition-all" size={60} />
        </> 
     ),
       title: "Vs Code",
-      style: "hover:scale-125 transition-all"
     },
   ];
 
@@ -228,7 +210,7 @@ const Experiencias = () => {
         <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-blue-500 mb-6  transition-all flex ">F<p className="text-white">ront</p>E<p className="text-white">nd</p> <FaReact className="hover:animate-spin ml-4 mt-2" /></h1>
         <article
         className="flex flex-wrap tlmc:justify-between lg:justify-start lg:gap-16 xl:gap-4">
-          {fronted.map(({ id,child ,title, style }) => (
+          {fronted.map(({ id,child ,title }) => (
             <div
             key={id} className="text-white mb-6" data-aos="fade-left">
               <div>
@@ -243,7 +225,7 @@ const Experiencias = () => {
      <article className="mt-4">
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-green-700 mb-6  transition-all flex ">B<p className="text-white">ack</p>E<p className="text-white">nd</p> <MdOutlineTerminal  className="ml-4 hover:animate-bounce mt-2" /></h1>
         <article className="flex flex-wrap text-center tlmc:justify-between md:justify-start md:gap-16">
-          {backend.map(({ id, child, title, style }) => (
+          {backend.map(({ id, child, title }) => (
             <div key={id} className='text-white mb-6' data-aos="fade-left">
               <div>
                 {child}
@@ -257,7 +239,7 @@ const Experiencias = () => {
       <article data-aos = 'fade-right'>
       <h1 className="text-[2.50rem] hover:text-[2.85rem] font-bold  text-white hover:text-orange-500 mb-6  transition-all flex ">H<p className="text-white">erramientas</p> <GrTools className="hover:animate-spin ml-4 mt-2" /></h1>
         <article className="flex flex-wrap tlmc:justify-between md:justify-start md:gap-12">
-          {Tools.map(({ id, child, title, style }) => (
+          {Tools.map(({ id, child, title }) => (
             <div key={id} className="text-white mb-6" data-aos="fade-left">
              <div>
               {child}

@@ -76,7 +76,7 @@ const Header = () => {
                 }}
                   key={id}
                   className='lineborder'>
-                    <Link to={link} spy={true} smooth={true} offset={50} duration={500}>{name}</Link>
+                    <Link to={link} href={link} spy={true} smooth={true} offset={50} duration={500}>{name}</Link>
                 </motion.li>
                 ))}
           </ul>

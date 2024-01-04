@@ -54,7 +54,7 @@ const HomePage = () => {
   return (
     <main 
     id='Perfil'
-      className='w-full h-screen'
+      className='w-full h-screen tlmc:pt-[15rem] tlc:pt-[10rem] xl:pt-0'
     >      
              <section className='max-w-screen-lg 
                   mx-auto flex flex-col items-center 
@@ -93,15 +93,14 @@ const HomePage = () => {
           <article
           
             className='flex mt-6 mb-4'>
-              <ul className='flex justify-between'>
+              <ul className='flex justify-between tlmc:flex-col md:flex-row tlmc:gap-2 md:gap-0'>
                  {links.map(({id, child , href, download, style}) => (
                 <li key={id} className={`text-xl px-4 py-2 bg-[#17202a] mr-6 text-white border border-white rounded-md xl:${style} transition-all duration-300 `}>
                     <a 
                       href={href} 
                       download={download} 
                       target='_blank'
-                      rel='noreferrer'
-                      className='flex flex-col justify-center items-center gap-2'
+                      className='flex md:flex md:flex-col justify-center items-center gap-2'
                       >{child}</a>
                 </li>
               ))}

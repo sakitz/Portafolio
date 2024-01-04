@@ -7,10 +7,6 @@
     src: url('./fonts/Silkscreen-Bold.ttf');
     font-display: swap;
 }
-/* * {
-    border: 2px solid red;
-} */
-
 @layer  components{
     .lineborder {
         @apply text-white font-bold px-4 cursor-pointer

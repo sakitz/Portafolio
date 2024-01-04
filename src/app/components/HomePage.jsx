@@ -1,10 +1,10 @@
 "use client"
 import Image from 'next/image'
-import { LuFileSpreadsheet } from "react-icons/lu";
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import {FaGithub, FaLinkedin  } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
+import { PiAddressBookBold } from "react-icons/pi";
 
 const HomePage = () => {
   const links = [
@@ -12,7 +12,7 @@ const HomePage = () => {
       id:1,
       child: (
         <>
-        <LuFileSpreadsheet size={30}/>
+        <PiAddressBookBold  size={30}/><span className=' text-lg'>Resume</span>
        </> 
     ),
       href: '../../../CV/benjamin-L.pdf',
@@ -23,7 +23,7 @@ const HomePage = () => {
     id:1,
     child: (
         <>
-        <FaLinkedin size={30}/>
+        <FaLinkedin size={30}/><span className='text-lg'>LinkedIn</span>
        </> 
     ),
     href: 'https://www.linkedin.com/in/m%C3%A1ximo-benjamin-lopez-2476152a2/',
@@ -33,7 +33,7 @@ const HomePage = () => {
     id:2,
     child: (
         <>
-        <FaGithub size={30}/>
+        <FaGithub size={30}/><span className='text-lg'>Github</span>
        </> 
     ),
     href: 'https://github.com/sakitz',
@@ -43,7 +43,7 @@ const HomePage = () => {
     id:3,
     child: (
         <>
-        <HiOutlineMail size={30}/>
+        <HiOutlineMail size={30}/><span className='text-lg'>Email</span>
        </> 
     ),
     href: 'mailto:benjaminlopezmia@gmail.com',
@@ -101,7 +101,7 @@ const HomePage = () => {
                       download={download} 
                       target='_blank'
                       rel='noreferrer'
-                      className='flex gap-2'
+                      className='flex flex-col justify-center items-center gap-2'
                       >{child}</a>
                 </li>
               ))}

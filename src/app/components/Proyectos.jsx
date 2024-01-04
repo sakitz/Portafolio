@@ -74,7 +74,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all pt-10"
                   alt="link para ir al repositorio del proyecto"
                 >
-                   <FaGithub className="text-white mr-4" size={30} /> <span className="text-sm">Code</span>
+                   <FaGithub className="text-white mr-[10.5rem]" size={35} /> Code
                 </Link>
                 <Link
                   href="https://tetris-one-peach.vercel.app/"
@@ -82,7 +82,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all pt-10"
                   alt="link para ir a la web del proyecto"
                 >
-                   <MdOutlineComputer className="text-white " size={30} /> <span className="text-sm">Web</span>
+                   <MdOutlineComputer className="text-white " size={35} /> Web
                 </Link>
               </article>
             </div>
@@ -123,7 +123,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /><span className="text-sm">Code</span>
+                  <FaGithub className="text-white mr-[10.5rem]" size={35} /> Code
                 </Link>
                 <Link
                   href="https://e-commerce-js-opal.vercel.app/"
@@ -131,7 +131,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span className="text-sm">Web</span>
+                  <MdOutlineComputer className="text-white " size={35} /> Web
                 </Link>
               </article>
             </div>
@@ -173,7 +173,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span className="text-sm">Code</span>
+                  <FaGithub className="text-white mr-[10.5rem]" size={35} /> <span className="text-sm">Code</span>
                 </Link>
                 <Link
                   href="https://tic-tac-toe-wheat-nine.vercel.app/"
@@ -181,7 +181,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span className="text-sm">Web</span>
+                  <MdOutlineComputer className="text-white " size={35} /> <span className="text-sm">Web</span>
                 </Link>
               </article>
             </div>
@@ -204,15 +204,12 @@ const Proyectos = () => {
                   <span className="mx-auto p-2 text-center">React-Expense</span>
                 </h1>
 
-                <ul className="flex flex-wrap gap-2 rounded-md text-white">
+                <ul className="flex flex-wrap gap-2 rounded-md justify-center text-white">
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <FaReact className="hover:animate-spin" size={25} />
                   </li>
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <SiTypescript size={30} />
-                  </li>
-                  <li className="hover:text-violet-400 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
-                    <SiVite size={30} className="hover:animate-pulse" />
                   </li>
                   <li className="hover:text-sky-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <SiTailwindcss size={30} />
@@ -226,7 +223,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span className="text-sm">Code</span>
+                  <FaGithub className="text-white mr-[10.5rem]" size={35} /> code
                 </Link>
                 <Link
                   href="https://react-expense-tau.vercel.app/"
@@ -234,7 +231,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span className="text-sm">Web</span>
+                  <MdOutlineComputer className="text-white " size={35} /> Web
                 </Link>
               </article>
             </div>
@@ -276,7 +273,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span className="text-sm">Code</span>
+                  <FaGithub className="text-white mr-[10.5rem]" size={35} /> code
                 </Link>
                 <Link
                   href="https://nextjs-api-users.vercel.app/"
@@ -284,7 +281,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span className="text-sm">Web</span>
+                  <MdOutlineComputer className="text-white " size={35} /> Web
                 </Link>
               </article>
             </div>
@@ -326,7 +323,7 @@ const Proyectos = () => {
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-40" size={35} /> Code
+                  <FaGithub className="text-white mr-[10.5rem]" size={35} /> Code
                  
                 </Link>
                 <Link

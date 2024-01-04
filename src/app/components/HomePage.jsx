@@ -53,7 +53,7 @@ const HomePage = () => {
 
   return (
     <main 
-    id='Perfil'
+    id='Inicio'
       className='w-full h-screen tlmc:pt-[15rem] tlc:pt-[10rem] xl:pt-0'
     >      
              <section className='max-w-screen-lg 

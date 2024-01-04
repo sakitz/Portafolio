@@ -22,7 +22,7 @@ const Aboutme = () => {
         setCurrentHour(formattedHour);
         setLoading(false);
       } catch (error) {
-        return error
+        
       }
     };
 

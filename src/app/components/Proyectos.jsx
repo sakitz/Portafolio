@@ -315,29 +315,27 @@ const Proyectos = () => {
                     <TbBrandNextjs size={30} />
                   </li>
                   <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
-                    <SiPrisma size={30} className="hover:animate-pulse" />
-                  </li>
-                  <li className="hover:text-blue-500 transition-all bg-blue-500/20 p-1.5 text-sm font-semibold">
                     <SiSqlite size={30} className="hover:animate-pulse" />
                   </li>
                 </ul>
               </article>
-              <article className="absolute right-4 bottom-0 flex flex-center text-white">
+              <article className="flex absolute right-4 flex-center items-center bottom-2 flex-row text-white">
                 <Link
                   href="https://github.com/sakitz/nextjs-prisma-crud"
                   target="_blank"
                   className="hover:scale-105 transition-all"
                   alt="link para ir al repositorio del proyecto"
                 >
-                  <FaGithub className="text-white mr-4" size={30} /> <span className="text-sm">Code</span>
+                  <FaGithub className="text-white mr-40" size={35} /> Code
+                 
                 </Link>
                 <Link
                   href="https://nextjs-prisma-crud-six-gules.vercel.app/"
                   target="_blank"
-                  className="hover:scale-105 transition-all"
+                  className="hover:scale-105 transition-all "
                   alt="link para ir a la web del proyecto"
                 >
-                  <MdOutlineComputer className="text-white " size={30} /> <span className="text-sm">Web</span>
+                  <MdOutlineComputer className="text-white" size={35} /> Web
                 </Link>
               </article>
             </div>

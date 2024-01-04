@@ -11,23 +11,19 @@ const Header = () => {
   const Links = [
     {
         id:1,
-        link:'Perfil',
-        name: 'Inicio'
+        link:'Inicio',
     },
     {
         id:2,
         link:'Tecnologias',
-        name: 'Tecnologias'
     },
     {
         id:3,
         link:'Proyectos',
-        name: 'Proyectos'
     }, 
     {
         id:4,
         link: 'Sobre mi',
-        name: 'Sobre mi'
     },
 
 ]
@@ -58,7 +54,7 @@ const Header = () => {
           
           
           <ul className='hidden md:flex'>
-              {Links.map(({link, name , id}) => (
+              {Links.map(({link , id}) => (
                 <motion.li
                 initial={{
                   scale: 0,
@@ -71,7 +67,7 @@ const Header = () => {
                 }}
                   key={id}
                   className='lineborder'>
-                    <Link to={link} href={link} spy={true} smooth={true} offset={50} duration={500}>{name}</Link>
+                    <Link to={link} href={link} spy={true} smooth={true} offset={50} duration={500}>{link}</Link>
                 </motion.li>
                 ))}
           </ul>
@@ -86,13 +82,13 @@ const Header = () => {
           {nav && (
             <ul
             className='nav'>
-              {Links.map(({link, name, id})  => (
+              {Links.map(({link, id})  => (
                 <li
                   key={id}
                   className='px-4 py-6 text-4xl'>
 
                   <Link to={link} href={link} spy={true} smooth={true} offset={50} duration={500} onClick={() => setNav(!nav)}>
-                            <p className='text-white'>{name}</p>
+                            <p className='text-white'>{link}</p>
                   </Link>      
                 </li>
               ))}
